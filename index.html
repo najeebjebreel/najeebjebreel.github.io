@@ -3,28 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Najeeb Jebreel - Machine Learning Privacy & Security Researcher</title>
+    <title>Dr. Najeeb Jebreel — ML Privacy &amp; Security Researcher</title>
+
+    <!-- SEO Meta -->
+    <meta name="description" content="Dr. Najeeb Jebreel is a researcher at URV specialising in machine learning privacy, security, federated learning, backdoor defences, and LLM alignment.">
+    <meta name="author" content="Najeeb Jebreel">
+    <meta name="keywords" content="Najeeb Jebreel, machine learning security, federated learning, backdoor attacks, LLM unlearning, privacy, URV, CRISES">
+    <link rel="canonical" href="https://najeebjebreel.github.io/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Dr. Najeeb Jebreel — ML Privacy &amp; Security Researcher">
+    <meta property="og:description" content="Researcher at URV | Federated Learning Security · Backdoor Defences · LLM Privacy">
+    <meta property="og:url" content="https://najeebjebreel.github.io/">
+    <meta property="og:image" content="https://najeebjebreel.github.io/images/profile_photo.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Dr. Najeeb Jebreel">
+    <meta name="twitter:description" content="ML Privacy &amp; Security Researcher · URV · CRISES Research Group">
+    <meta name="twitter:image" content="https://najeebjebreel.github.io/images/profile_photo.jpg">
+
+    <!-- Schema.org Person -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Najeeb Jebreel",
+      "honorificPrefix": "Dr.",
+      "jobTitle": "Ordinary Researcher",
+      "affiliation": {
+        "@type": "Organization",
+        "name": "Universitat Rovira i Virgili",
+        "url": "https://www.urv.cat/en/"
+      },
+      "url": "https://najeebjebreel.github.io/",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en",
+        "https://orcid.org/0000-0002-4911-3802",
+        "https://www.researchgate.net/profile/Najeeb-Jebreel",
+        "https://github.com/najeebjebreel",
+        "https://www.linkedin.com/in/najeebjebreel/"
+      ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+
     <!-- Header -->
-    <header>
+    <header id="main-header">
         <div class="container header-container">
             <div class="logo">
-                <a href="images/profile_photo.jpg">Najeeb Jebreel</a>
+                <a href="#home">Najeeb Jebreel</a>
             </div>
-            <nav>
-                <ul class="nav-links">
+            <nav aria-label="Primary navigation">
+                <ul class="nav-links" role="list">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#news">News</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#publications">Publications</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#cv">CV</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <div class="menu-btn">
-                    <i class="fas fa-bars"></i>
+                <div class="header-controls">
+                    <button class="dark-mode-btn" id="darkModeToggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon" aria-hidden="true"></i>
+                    </button>
+                    <button class="menu-btn" id="menuBtn" aria-label="Open navigation menu" aria-expanded="false">
+                        <i class="fas fa-bars" aria-hidden="true"></i>
+                    </button>
                 </div>
             </nav>
         </div>
@@ -32,209 +91,232 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-            </br>
-            </br>
-            </br>
-                <h2></h2>
-                <p>Ordinary Researcher at Universitat Rovira i Virgili (URV)</p>
-                <p>CRISES Research Group | Machine Learning Privacy and Security</p>
-                <p style="font-size: 0.9rem; margin-top: 0.5rem;"><i>h-index: 10 | Total Citations: 308</i></p>
-                <div class="social-links">
-                    <a href="https://github.com/najeebjebreel" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/najeebjebreel/" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                    <a href="https://orcid.org/0000-0002-4911-3802" target="_blank" title="ORCID: 0000-0002-4911-3802"><i class="fab fa-orcid"></i></a>
-                    <a href="https://www.researchgate.net/profile/Najeeb-Jebreel" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
-                    <a href="mailto:najeeb.jebreel@urv.cat" title="Email"><i class="fas fa-envelope"></i></a>
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <p class="hero-eyebrow">Ordinary Researcher · URV · CRISES Research Group</p>
+                <h1>Dr. Najeeb Jebreel</h1>
+                <p class="hero-tagline">Machine Learning <span class="accent">Privacy</span> &amp; <span class="accent">Security</span></p>
+                <p class="hero-sub">Federated Learning · Backdoor Defences · LLM Alignment</p>
+                <p class="hero-metrics"><i class="fas fa-chart-bar" aria-hidden="true"></i>&nbsp; h-index: 10 &nbsp;|&nbsp; Total Citations: 308</p>
+                <div class="social-links" role="list">
+                    <a href="https://github.com/najeebjebreel" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/najeebjebreel/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar profile"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+                    <a href="https://orcid.org/0000-0002-4911-3802" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID profile"><i class="fab fa-orcid" aria-hidden="true"></i></a>
+                    <a href="https://www.researchgate.net/profile/Najeeb-Jebreel" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate profile"><i class="fab fa-researchgate" aria-hidden="true"></i></a>
+                    <a href="mailto:najeeb.jebreel@urv.cat" title="Email" aria-label="Send email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
                 </div>
             </div>
-            <div class="hero-image">
-                <img src="images/profile_photo.jpg" alt="Dr. Najeeb Jebreel">
+            <div class="hero-image reveal reveal-delay-1">
+                <img src="images/profile_photo.jpg" alt="Portrait of Dr. Najeeb Jebreel" width="320" height="320" loading="eager">
             </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="news-section alt-bg">
+        <div class="container">
+            <h2 class="section-title reveal">Recent News</h2>
+            <ul class="news-list" role="list">
+                <li class="news-item reveal">
+                    <span class="news-date">Jan 2025</span>
+                    <span class="news-badge badge-journal">Journal</span>
+                    <span class="news-text">Survey on <em>Digital Forgetting in LLMs</em> published in <strong>Artificial Intelligence Review</strong> (Q1, 1st decile).</span>
+                </li>
+                <li class="news-item reveal">
+                    <span class="news-date">2024</span>
+                    <span class="news-badge badge-invited">Invited Talk</span>
+                    <span class="news-text">Presented PAKDD Best Paper at <strong>IJCAI 2024</strong> (CORE A★) — Sisters Conference Track, Jeju, South Korea.</span>
+                </li>
+                <li class="news-item reveal">
+                    <span class="news-date">2024</span>
+                    <span class="news-badge badge-journal">Journal</span>
+                    <span class="news-text"><em>Enhanced Security and Privacy via Fragmented Federated Learning</em> published in <strong>IEEE TNNLS</strong> (Q1, 1st decile).</span>
+                </li>
+                <li class="news-item reveal">
+                    <span class="news-date">2023</span>
+                    <span class="news-badge badge-award">Award</span>
+                    <span class="news-text">Received the <strong>URV Extraordinary Doctorate Award</strong> for the doctoral thesis in Computer Engineering and Mathematics of Security.</span>
+                </li>
+                <li class="news-item reveal">
+                    <span class="news-date">2023</span>
+                    <span class="news-badge badge-award">Best Paper</span>
+                    <span class="news-text">🏆 Won <strong>Best Paper Award</strong> at PAKDD 2023 (CORE A, 869 submissions, 16.5% acceptance rate), Osaka, Japan.</span>
+                </li>
+            </ul>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title reveal">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
-                    <p>I am an Ordinary Researcher at the Universitat Rovira i Virgili (URV), working within the CRISES Research Group. My research focuses on the intersection of artificial intelligence, machine learning privacy, and security. I specialize in developing secure and privacy-preserving machine learning systems that can withstand various forms of attacks.</p>
-                    
-                    <p>With over a decade of diverse academic and professional experience, I have made significant contributions to the development of defensive mechanisms against backdoor attacks, enhancing federated learning privacy and security, and aligning large language models (LLMs) with ethical values.</p>
-                    
-                    <p>My research excellence has been recognized through multiple prestigious awards, including the Best Paper Award at the CORE A-ranked PAKDD 2023 conference (among 869 submissions). I have also presented my work at top-tier international conferences such as IJCAI (CORE A* ranking) and published in high-impact journals like Neural Networks and IEEE Transactions on Neural Networks and Learning Systems.</p>
-                    
-                    <p>I received my PhD in Computer Engineering and Mathematics of Security from URV in 2023, graduating cum laude and earning the URV Extraordinary Doctorate Award. Prior to that, I completed my Master's in Computer Security Engineering and Artificial Intelligence at URV (2019) and my Bachelor's in Computer Science and Engineering from Hodeidah University, Yemen (2009).</p>
+                <div class="about-text reveal">
+                    <p>I am an Ordinary Researcher at the <a href="https://www.urv.cat/en/" target="_blank" rel="noopener">Universitat Rovira i Virgili (URV)</a>, working within the <a href="https://crises-deim.urv.cat/" target="_blank" rel="noopener">CRISES Research Group</a>. My research sits at the intersection of artificial intelligence, machine learning privacy, and security — with a focus on building systems that are robust, trustworthy, and ethically aligned.</p>
+                    <p>With over a decade of diverse academic and professional experience, I have contributed to defensive mechanisms against backdoor and label-flipping attacks in federated learning, privacy-preserving ML, and the alignment and unlearning of large language models (LLMs).</p>
+                    <p>My work has been recognised through multiple prestigious awards, including the <strong>Best Paper Award</strong> at the CORE A-ranked PAKDD 2023 (among 869 submissions). I have presented at top-tier venues such as IJCAI (CORE A★) and published in high-impact journals including <em>Neural Networks</em> and <em>IEEE Transactions on Neural Networks and Learning Systems</em>.</p>
+                    <p>I received my <strong>PhD in Computer Engineering and Mathematics of Security</strong> from URV in 2023, graduating <em>cum laude</em> and earning the URV Extraordinary Doctorate Award.</p>
                 </div>
-                <div class="skills">
+                <div class="skills reveal reveal-delay-1">
                     <h3>Research Areas</h3>
-                    <div class="skill-item">
-                        <div class="skill-name">Federated Learning Privacy and Security</div>
-                        <!-- <div class="skill-bar">
-                            <div class="skill-progress" style="width: 95%;"></div>
-                        </div> -->
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Machine Privacy and Security</div>
-                        <!-- <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div> -->
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Backdoor Attack Defense</div>
-                        <!-- <div class="skill-bar">
-                            <div class="skill-progress" style="width: 90%;"></div>
-                        </div> -->
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">LLM Privacy & Ethics</div>
-                        <!-- <div class="skill-bar">
-                            <div class="skill-progress" style="width: 85%;"></div>
-                        </div> -->
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Machine Learning Watermarking</div>
-                        <!-- <div class="skill-bar">
-                            <div class="skill-progress" style="width: 88%;"></div>
-                        </div> -->
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Deep Learning Security</div>
-                        <!-- <div class="skill-bar">
-                            <div class="skill-progress" style="width: 92%;"></div>
-                        </div> -->
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-name">Explainable AI</div>
-                        <!-- <div class="skill-bar">
-                            <div class="skill-progress" style="width: 80%;"></div>
-                        </div> -->
-                    </div>
+                    <ul class="skill-list" role="list">
+                        <li class="skill-item"><i class="fas fa-shield-alt" aria-hidden="true"></i> Federated Learning Privacy &amp; Security</li>
+                        <li class="skill-item"><i class="fas fa-lock" aria-hidden="true"></i> Machine Learning Privacy &amp; Security</li>
+                        <li class="skill-item"><i class="fas fa-bug" aria-hidden="true"></i> Backdoor Attack Defence</li>
+                        <li class="skill-item"><i class="fas fa-brain" aria-hidden="true"></i> LLM Privacy, Ethics &amp; Unlearning</li>
+                        <li class="skill-item"><i class="fas fa-fingerprint" aria-hidden="true"></i> Machine Learning Watermarking</li>
+                        <li class="skill-item"><i class="fas fa-eye" aria-hidden="true"></i> Deep Learning Security</li>
+                        <li class="skill-item"><i class="fas fa-lightbulb" aria-hidden="true"></i> Explainable AI</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Publications Section -->
-    <section id="publications" class="resume">
+    <section id="publications" class="publications alt-bg">
         <div class="container">
-            <h2 class="section-title">Selected Publications</h2>
+            <h2 class="section-title reveal">Selected Publications</h2>
             <div class="publications-list">
-                <div class="resume-item">
-                    <div class="resume-duration">2025</div>
-                    <div class="resume-title">"Digital Forgetting in Large Language Models: A Survey of Unlearning Methods"</div>
-                    <div class="resume-company">Artificial Intelligence Review, vol. 58, no. 3, p. 90 (Q1, 1st decile)</div>
-                    <p>Authors: Alberto Blanco-Justicia, <strong>Najeeb Jebreel</strong>, Benet Manzanares, David Sánchez, Josep Domingo-Ferrer, Guillem Collell, Kuan Eeik Tan</p>
-                    <div class="project-links" style="margin-top: 10px;">
-                        <a href="https://doi.org/10.1007/s10462-024-11078-6" target="_blank">DOI</a>
-                        <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank">Citations: 11</a>
+
+                <article class="pub-card reveal" aria-label="Publication">
+                    <div class="pub-year">2025</div>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-q1">Q1 · 1st Decile</span>
+                        </div>
+                        <h3 class="pub-title">"Digital Forgetting in Large Language Models: A Survey of Unlearning Methods"</h3>
+                        <p class="pub-venue"><em>Artificial Intelligence Review</em>, vol. 58, no. 3, p. 90, Springer, 2025</p>
+                        <p class="pub-authors">Alberto Blanco-Justicia, <strong>Najeeb Jebreel</strong>, Benet Manzanares, David Sánchez, Josep Domingo-Ferrer, Guillem Collell, Kuan Eeik Tan</p>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1007/s10462-024-11078-6" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
+                            <span class="pub-citations"><i class="fas fa-quote-right" aria-hidden="true"></i> 11 citations</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="resume-item">
-                    <div class="resume-duration">2024</div>
-                    <div class="resume-title">"Enhanced Security and Privacy via Fragmented Federated Learning"</div>
-                    <div class="resume-company">IEEE Transactions on Neural Networks and Learning Systems, vol. 35, no. 5, pp. 6703-6717 (Q1, 1st decile)</div>
-                    <p>Authors: <strong>Najeeb Jebreel</strong>, Josep Domingo-Ferrer, Alberto Blanco-Justicia, David Sánchez</p>
-                    <div class="project-links" style="margin-top: 10px;">
-                        <a href="https://doi.org/10.1109/TNNLS.2022.3212627" target="_blank">DOI</a>
-                        <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank">Citations: 33</a>
+                </article>
+
+                <article class="pub-card reveal" aria-label="Publication">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-q1">Q1 · 1st Decile</span>
+                        </div>
+                        <h3 class="pub-title">"Enhanced Security and Privacy via Fragmented Federated Learning"</h3>
+                        <p class="pub-venue"><em>IEEE Transactions on Neural Networks and Learning Systems</em>, vol. 35, no. 5, pp. 6703–6717, 2024</p>
+                        <p class="pub-authors"><strong>Najeeb Jebreel</strong>, Josep Domingo-Ferrer, Alberto Blanco-Justicia, David Sánchez</p>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1109/TNNLS.2022.3212627" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
+                            <span class="pub-citations"><i class="fas fa-quote-right" aria-hidden="true"></i> 33 citations</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="resume-item">
-                    <div class="resume-duration">2024</div>
-                    <div class="resume-title">"LFighter: Defending against the Label-flipping Attack in Federated Learning"</div>
-                    <div class="resume-company">Neural Networks, vol. 170, pp. 111-126 (Q1)</div>
-                    <p>Authors: <strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, David Sánchez, Alberto Blanco-Justicia</p>
-                    <div class="project-links" style="margin-top: 10px;">
-                        <a href="https://doi.org/10.1016/j.neunet.2023.11.019" target="_blank">DOI</a>
-                        <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank">Citations: 69</a>
+                </article>
+
+                <article class="pub-card reveal" aria-label="Publication">
+                    <div class="pub-year">2024</div>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-q1">Q1</span>
+                        </div>
+                        <h3 class="pub-title">"LFighter: Defending against the Label-Flipping Attack in Federated Learning"</h3>
+                        <p class="pub-venue"><em>Neural Networks</em>, vol. 170, pp. 111–126, Elsevier, 2024</p>
+                        <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, David Sánchez, Alberto Blanco-Justicia</p>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1016/j.neunet.2023.11.019" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
+                            <a href="https://github.com/najeebjebreel/LFighter" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            <span class="pub-citations"><i class="fas fa-quote-right" aria-hidden="true"></i> 69 citations</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="resume-item">
-                    <div class="resume-duration">2023</div>
-                    <div class="resume-title">"FL-Defender: Combating Targeted Attacks in Federated Learning"</div>
-                    <div class="resume-company">Knowledge-Based Systems, vol. 260, p. 110178 (Q1)</div>
-                    <p>Authors: <strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer</p>
-                    <div class="project-links" style="margin-top: 10px;">
-                        <a href="https://doi.org/10.1016/j.knosys.2022.110178" target="_blank">DOI</a>
-                        <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank">Citations: 63</a>
+                </article>
+
+                <article class="pub-card reveal" aria-label="Publication">
+                    <div class="pub-year">2023</div>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-q1">Q1</span>
+                        </div>
+                        <h3 class="pub-title">"FL-Defender: Combating Targeted Attacks in Federated Learning"</h3>
+                        <p class="pub-venue"><em>Knowledge-Based Systems</em>, vol. 260, p. 110178, Elsevier, 2023</p>
+                        <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer</p>
+                        <div class="pub-links">
+                            <a href="https://doi.org/10.1016/j.knosys.2022.110178" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>
+                            <span class="pub-citations"><i class="fas fa-quote-right" aria-hidden="true"></i> 63 citations</span>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="resume-item">
-                    <div class="resume-duration">2023</div>
-                    <div class="resume-title">"Defending Against Backdoor Attacks by Layer-wise Feature Analysis"</div>
-                    <div class="resume-company">27th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD2023), Osaka, Japan (CORE A)</div>
-                    <p>Authors: <strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, Yiming Li</p>
-                    <p><strong>Best Paper Award</strong> (among 869 submissions, 16.5% acceptance rate)</p>
-                    <div class="project-links" style="margin-top: 10px;">
-                        <a href="#" target="_blank">Paper</a>
-                        <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank">Citations: 16</a>
+                </article>
+
+                <article class="pub-card reveal" aria-label="Publication">
+                    <div class="pub-year">2023</div>
+                    <div class="pub-body">
+                        <div class="pub-badges">
+                            <span class="badge badge-award">🏆 Best Paper Award</span>
+                            <span class="badge badge-core">CORE A</span>
+                            <span class="badge badge-invited">Invited · IJCAI 2024</span>
+                        </div>
+                        <h3 class="pub-title">"Defending Against Backdoor Attacks by Layer-wise Feature Analysis"</h3>
+                        <p class="pub-venue">27th Pacific-Asia Conference on Knowledge Discovery and Data Mining (<em>PAKDD 2023</em>), Osaka, Japan — pp. 428–440, Springer, 2023</p>
+                        <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, Yiming Li</p>
+                        <p class="pub-note">Best Paper Award — 869 submissions, 16.5% acceptance rate. Invited to IJCAI 2024 Sisters Conference Track.</p>
+                        <div class="pub-links">
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-031-33377-4_33" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Paper</a>
+                            <a href="https://github.com/najeebjebreel/DBALFA" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+                            <span class="pub-citations"><i class="fas fa-quote-right" aria-hidden="true"></i> 16 citations</span>
+                        </div>
                     </div>
-                </div>
+                </article>
+
             </div>
-            
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" class="submit-btn" style="display: inline-block;">View All Publications</a>
+            <div class="section-cta reveal">
+                <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener" class="btn-primary">
+                    <i class="fas fa-graduation-cap" aria-hidden="true"></i> View All Publications on Google Scholar
+                </a>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="resume">
+    <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Research Projects</h2>
+            <h2 class="section-title reveal">Research Projects</h2>
             <div class="resume-container">
-                <div class="resume-section" style="flex: 1;">
-                    <div class="resume-item">
-                        <div class="resume-duration">2023 - 2025</div>
-                        <div class="resume-title">Strategic Project HERMES</div>
-                        <!-- <div class="resume-company">Funded by INCIBE (€833,961.34)</div> -->
-                        <p>Contributing to advanced research in cybersecurity and privacy-preserving technologies as part of the URV team led by Prof. Josep Domingo Ferrer.</p>
+                <div class="resume-section">
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2024 – Present</div>
+                        <h3 class="resume-title">Mitigating Ethical Risks in LLMs through Localized Unlearning</h3>
+                        <div class="resume-company">Notre Dame–IBM Technology Ethics Lab</div>
+                        <p>Investigating selective forgetting in large language models to protect privacy and reduce harmful content generation.</p>
                     </div>
-                    
-                    <div class="resume-item">
-                        <div class="resume-duration">2022 - 2025</div>
-                        <div class="resume-title">CURLING: Co-Utile decentRaLized computING for ethics by design</div>
-                        <!-- <div class="resume-company">Funded by Ministerio de Ciencia e Innovación (€145,442)</div> -->
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2023 – 2025</div>
+                        <h3 class="resume-title">Strategic Project HERMES</h3>
+                        <div class="resume-company">INCIBE · URV Team led by Prof. Josep Domingo-Ferrer</div>
+                        <p>Advanced research in cybersecurity and privacy-preserving technologies.</p>
+                    </div>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2022 – 2025</div>
+                        <h3 class="resume-title">CURLING: Co-Utile decentRaLized computING for ethics by design</h3>
+                        <div class="resume-company">Ministerio de Ciencia e Innovación</div>
                         <p>Developing ethical decentralized computing solutions with a focus on privacy and security for distributed systems.</p>
                     </div>
-                    
-                    <div class="resume-item">
-                        <div class="resume-duration">2021 - 2024</div>
-                        <div class="resume-title">CRISES: Security and Privacy (2021 SGR 00115)</div>
-                        <!-- <div class="resume-company">Funded by AGENCIA DE GESTIÓ D'AJUTS UNIVERSITARIS I DE RECERCA (€40,000)</div> -->
+                </div>
+                <div class="resume-section">
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2021 – 2024</div>
+                        <h3 class="resume-title">CRISES: Security and Privacy (2021 SGR 00115)</h3>
+                        <div class="resume-company">AGAUR · Generalitat de Catalunya</div>
                         <p>Core researcher in the CRISES security and privacy research group at URV.</p>
                     </div>
-                </div>
-                
-                <div class="resume-section" style="flex: 1;">
-                    <div class="resume-item">
-                        <div class="resume-duration">2021 - 2024</div>
-                        <div class="resume-title">MobiDataLab: Labs for prototyping future Mobility Data sharing cloud solutions</div>
-                        <!-- <div class="resume-company">Funded by European Commission (Horizon 2020, €286,562)</div> -->
-                        <p>Researching privacy-preserving techniques for mobility data sharing and cloud solutions.</p>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2021 – 2024</div>
+                        <h3 class="resume-title">MobiDataLab</h3>
+                        <div class="resume-company">European Commission · Horizon 2020</div>
+                        <p>Privacy-preserving techniques for mobility data sharing and cloud solutions.</p>
                     </div>
-                    
-                    <div class="resume-item">
-                        <div class="resume-duration">2020 - 2023</div>
-                        <div class="resume-title">SoBigData++: European Integrated Infrastructure for Social Mining and Big Data Analytics</div>
-                        <!-- <div class="resume-company">Funded by European Commission (Horizon 2020, €253,750)</div> -->
-                        <p>Contributing to privacy and security aspects of big data analytics within the European infrastructure project.</p>
-                    </div>
-                    
-                    <div class="resume-item">
-                        <div class="resume-duration">2024 - Present</div>
-                        <div class="resume-title">Mitigating Ethical Risks in Large Language Models through Localized Unlearning</div>
-                        <!-- <div class="resume-company">Funded by Notre Dame-IBM Technology Ethics Lab ($60,000)</div> -->
-                        <p>Investigating ethical approaches to selective forgetting in large language models to protect privacy and reduce harmful content.</p>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2020 – 2023</div>
+                        <h3 class="resume-title">SoBigData++</h3>
+                        <div class="resume-company">European Commission · Horizon 2020</div>
+                        <p>Privacy and security aspects of big data analytics within the European integrated research infrastructure.</p>
                     </div>
                 </div>
             </div>
@@ -242,101 +324,103 @@
     </section>
 
     <!-- CV Section -->
-    <section id="cv" class="resume">
+    <section id="cv" class="cv alt-bg">
         <div class="container">
-            <h2 class="section-title">Curriculum Vitae</h2>
+            <h2 class="section-title reveal">Curriculum Vitae</h2>
             <div class="resume-container">
                 <div class="resume-section">
-                    <h3>Education</h3>
-                    <div class="resume-item">
-                        <div class="resume-duration">2020 - 2023</div>
-                        <div class="resume-title">Ph.D. in Computer Engineering and Mathematics of Security</div>
-                        <div class="resume-company">Universitat Rovira i Virgili, Spain</div>
-                        <p><strong>Cum Laude, URV Extraordinary Doctorate Award</strong></p>
+                    <h3 class="subsection-title reveal">Education</h3>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2020 – 2023</div>
+                        <h4 class="resume-title">PhD in Computer Engineering and Mathematics of Security</h4>
+                        <div class="resume-company">Universitat Rovira i Virgili, Tarragona, Spain</div>
+                        <p><strong>Cum Laude · URV Extraordinary Doctorate Award</strong></p>
                     </div>
-                    <div class="resume-item">
+                    <div class="resume-item reveal">
                         <div class="resume-duration">2019</div>
-                        <div class="resume-title">Master's in Computer Security Engineering and Artificial Intelligence</div>
+                        <h4 class="resume-title">Master's in Computer Security Engineering and Artificial Intelligence</h4>
                         <div class="resume-company">Universitat Rovira i Virgili, Spain</div>
-                        <p>GPA: 8.1/10</p>
+                        <p>GPA: 8.1 / 10</p>
                     </div>
-                    <div class="resume-item">
+                    <div class="resume-item reveal">
                         <div class="resume-duration">2009</div>
-                        <div class="resume-title">Bachelor's Degree in Computer Science and Engineering</div>
+                        <h4 class="resume-title">Bachelor's in Computer Science and Engineering</h4>
                         <div class="resume-company">Hodeidah University, Yemen</div>
-                        <p>GPA: 79.39/100</p>
+                        <p>GPA: 79.39 / 100</p>
                     </div>
                 </div>
                 <div class="resume-section">
-                    <h3>Professional Experience</h3>
-                    <div class="resume-item">
-                        <div class="resume-duration">2024 - Present</div>
-                        <div class="resume-title">Ordinary Researcher</div>
+                    <h3 class="subsection-title reveal">Professional Experience</h3>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2024 – Present</div>
+                        <h4 class="resume-title">Ordinary Researcher</h4>
                         <div class="resume-company">Universitat Rovira i Virgili (URV)</div>
-                        <p>Leading research on machine learning security, privacy-preserving AI, and ethical aspects of large language models.</p>
+                        <p>Leading research on ML security, privacy-preserving AI, and ethical LLM alignment.</p>
                     </div>
-                    <div class="resume-item">
+                    <div class="resume-item reveal">
                         <div class="resume-duration">2023</div>
-                        <div class="resume-title">Research Support Technician</div>
+                        <h4 class="resume-title">Research Support Technician</h4>
                         <div class="resume-company">Universitat Rovira i Virgili (URV)</div>
-                        <p>Provided technical research support for cybersecurity and privacy projects.</p>
+                        <p>Technical research support for cybersecurity and privacy projects.</p>
                     </div>
-                    <div class="resume-item">
-                        <div class="resume-duration">2020 - 2023</div>
-                        <div class="resume-title">FI Predoctoral Grant Holder</div>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2020 – 2023</div>
+                        <h4 class="resume-title">FI Predoctoral Grant Holder</h4>
                         <div class="resume-company">Universitat Rovira i Virgili (URV)</div>
-                        <p>Conducted doctoral research on machine learning security and privacy.</p>
+                        <p>Doctoral research on machine learning security and privacy.</p>
                     </div>
-                    <div class="resume-item">
-                        <div class="resume-duration">2012 - 2017</div>
-                        <div class="resume-title">Computer System Manager</div>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2012 – 2017</div>
+                        <h4 class="resume-title">Computer System Manager</h4>
                         <div class="resume-company">Hodeidah University, Yemen</div>
-                        <p>Managed university's automated systems and IT infrastructure.</p>
+                        <p>Managed the university's automated systems and IT infrastructure.</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="resume-container" style="margin-top: 40px;">
+
+            <div class="resume-container" style="margin-top: 3rem;">
                 <div class="resume-section">
-                    <h3>Awards & Recognition</h3>
-                    <div class="resume-item">
+                    <h3 class="subsection-title reveal">Awards &amp; Recognition</h3>
+                    <div class="resume-item reveal">
                         <div class="resume-duration">2023</div>
-                        <div class="resume-title">URV Extraordinary Doctorate Award</div>
+                        <h4 class="resume-title">URV Extraordinary Doctorate Award</h4>
                         <div class="resume-company">Universitat Rovira i Virgili</div>
                         <p>Awarded for exceptional doctoral thesis in Computer Engineering and Mathematics of Security.</p>
                     </div>
-                    <div class="resume-item">
+                    <div class="resume-item reveal">
                         <div class="resume-duration">2023</div>
-                        <div class="resume-title">Best Paper Award</div>
-                        <div class="resume-company">PAKDD2023 (CORE A-ranked conference)</div>
-                        <p>Awarded for the paper "Defending Against Backdoor Attacks by Layer-wise Feature Analysis" (acceptance rate: 16.5%).</p>
+                        <h4 class="resume-title">🏆 Best Paper Award — PAKDD 2023</h4>
+                        <div class="resume-company">27th Pacific-Asia Conference on KDD (CORE A)</div>
+                        <p>"Defending Against Backdoor Attacks by Layer-wise Feature Analysis" — 869 submissions, 16.5% acceptance rate.</p>
                     </div>
-                    <div class="resume-item">
-                        <div class="resume-duration">2023</div>
-                        <div class="resume-title">IJCAI-2024 Invitation</div>
-                        <div class="resume-company">International Joint Conference on Artificial Intelligence</div>
-                        <p>Invited to present at IJCAI-2024 (CORE A* ranking) based on the exceptional contribution of PAKDD2023 paper.</p>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2024</div>
+                        <h4 class="resume-title">Invited — IJCAI 2024 Sisters Conference Track</h4>
+                        <div class="resume-company">International Joint Conference on Artificial Intelligence (CORE A★)</div>
+                        <p>Invited to present based on the exceptional contribution of the PAKDD 2023 best paper.</p>
                     </div>
                 </div>
                 <div class="resume-section">
-                    <h3>Academic Service</h3>
-                    <div class="resume-item">
-                        <div class="resume-duration">2020 - Present</div>
-                        <div class="resume-title">Research Collaborations</div>
-                        <div class="resume-company">International Research Partners</div>
-                        <p>Collaborated with researchers from institutions such as Huawei Technologies and the Notre Dame-IBM Technology Ethics Lab.</p>
-                    </div>
-                    <div class="resume-item">
-                        <div class="resume-duration">2023 - Present</div>
-                        <div class="resume-title">Student Co-supervision</div>
+                    <h3 class="subsection-title reveal">Academic Service</h3>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2023 – Present</div>
+                        <h4 class="resume-title">Student Co-supervision</h4>
                         <div class="resume-company">Universitat Rovira i Virgili</div>
-                        <p>Co-supervised master's and PhD students in machine learning security and privacy.</p>
+                        <p>Co-supervising Master's and PhD students in machine learning security and privacy.</p>
+                    </div>
+                    <div class="resume-item reveal">
+                        <div class="resume-duration">2020 – Present</div>
+                        <h4 class="resume-title">International Research Collaborations</h4>
+                        <div class="resume-company">Huawei Technologies &amp; Notre Dame–IBM Technology Ethics Lab</div>
+                        <p>Research partnerships spanning backdoor defences, LLM unlearning, and privacy-preserving ML.</p>
                     </div>
                 </div>
             </div>
-            
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="#" class="submit-btn" style="display: inline-block;">Download Full CV</a>
+
+            <div class="section-cta reveal">
+                <a href="https://crises-deim.urv.cat/web/members-2/najeeb-jebreel/" target="_blank" rel="noopener" class="btn-primary">
+                    <i class="fas fa-user" aria-hidden="true"></i> Full Profile at CRISES
+                </a>
             </div>
         </div>
     </section>
@@ -344,43 +428,38 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Contact Information</h2>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h3>Email</h3>
-                            <p><a href="mailto:najeeb.jebreel@urv.cat">najeeb.jebreel@urv.cat</a></p>
-                        </div>
+            <h2 class="section-title reveal">Contact</h2>
+            <div class="contact-grid">
+                <div class="contact-item reveal">
+                    <i class="fas fa-envelope contact-icon" aria-hidden="true"></i>
+                    <div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:najeeb.jebreel@urv.cat">najeeb.jebreel@urv.cat</a></p>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h3>Phone</h3>
-                            <p>+34 </p>
-                        </div>
+                </div>
+                <div class="contact-item reveal">
+                    <i class="fas fa-map-marker-alt contact-icon" aria-hidden="true"></i>
+                    <div>
+                        <h3>Office</h3>
+                        <address>
+                            CRISES Research Group<br>
+                            Dept. of Computer Engineering and Mathematics<br>
+                            Universitat Rovira i Virgili<br>
+                            Av. Països Catalans, 26<br>
+                            43007 Tarragona, Spain
+                        </address>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h3>Office Location</h3>
-                            <p>CRISES Research Group</p>
-                            <p>Department of Computer Engineering and Mathematics</p>
-                            <p>Universitat Rovira i Virgili</p>
-                            <p>School of Engineering</p>
-                            <p>Av. Països Catalans, 26</p>
-                            <p>43007 Tarragona, Spain</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-user-graduate"></i>
-                        <div>
-                            <h3>Academic Profiles</h3>
-                            <p><a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank">Google Scholar</a></p>
-                            <p><a href="https://orcid.org/0000-0002-4911-3802" target="_blank">ORCID: 0000-0002-4911-3802</a></p>
-                            <p><a href="#" target="_blank">ResearchGate</a></p>
-                        </div>
+                </div>
+                <div class="contact-item reveal">
+                    <i class="fas fa-user-graduate contact-icon" aria-hidden="true"></i>
+                    <div>
+                        <h3>Academic Profiles</h3>
+                        <ul class="profile-links" role="list">
+                            <li><a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
+                            <li><a href="https://orcid.org/0000-0002-4911-3802" target="_blank" rel="noopener">ORCID: 0000-0002-4911-3802</a></li>
+                            <li><a href="https://www.researchgate.net/profile/Najeeb-Jebreel" target="_blank" rel="noopener">ResearchGate</a></li>
+                            <li><a href="https://crises-deim.urv.cat/" target="_blank" rel="noopener">CRISES Research Group</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -389,25 +468,25 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <ul class="footer-links">
+        <div class="container footer-inner">
+            <ul class="footer-links" role="list">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#cv">CV</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="social-links">
-                <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                <a href="https://orcid.org/0000-0002-4911-3802" target="_blank" title="ORCID: 0000-0002-4911-3802"><i class="fab fa-orcid"></i></a>
-                <a href="#" title="ResearchGate"><i class="fab fa-researchgate"></i></a>
-                <a href="mailto:najeeb.jebreel@urv.cat" title="Email"><i class="fas fa-envelope"></i></a>
+            <div class="social-links footer-social">
+                <a href="https://github.com/najeebjebreel" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/najeebjebreel/" target="_blank" rel="noopener" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener" title="Google Scholar" aria-label="Google Scholar"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+                <a href="https://orcid.org/0000-0002-4911-3802" target="_blank" rel="noopener" title="ORCID" aria-label="ORCID"><i class="fab fa-orcid" aria-hidden="true"></i></a>
+                <a href="https://www.researchgate.net/profile/Najeeb-Jebreel" target="_blank" rel="noopener" title="ResearchGate" aria-label="ResearchGate"><i class="fab fa-researchgate" aria-hidden="true"></i></a>
+                <a href="mailto:najeeb.jebreel@urv.cat" title="Email" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
             </div>
-            <p class="footer-text">© 2025 Dr. Najeeb Jebreel. Last updated: March 2025</p>
-            <p class="footer-text" style="margin-top: 5px; font-size: 0.8rem;">CRISES Research Group, Universitat Rovira i Virgili (URV)</p>
+            <p class="footer-text">© 2026 Dr. Najeeb Jebreel &nbsp;·&nbsp; CRISES Research Group, Universitat Rovira i Virgili</p>
         </div>
     </footer>
 
