@@ -50,6 +50,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#cv">CV</a></li>
@@ -167,6 +168,41 @@
           <li class="skill-item"><i class="fas fa-lightbulb"></i> Explainable AI</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<hr class="section-divider">
+
+<!-- ───────────────── RESEARCH ───────────────── -->
+<section id="research" class="research">
+  <div class="container">
+    <p class="section-label reveal">What I Work On</p>
+    <h2 class="section-title reveal">Research</h2>
+    <p class="research-intro reveal">My work sits at the intersection of machine learning, privacy, and security — building AI systems that are robust, trustworthy, and aligned with human values. Three threads run through my research portfolio:</p>
+    <div class="research-grid">
+
+      <div class="research-card reveal">
+        <div class="research-card-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Federated Learning Security</h3>
+        <p>Federated learning enables collaborative model training without sharing raw data, but introduces new attack surfaces. My work develops defences against <strong>label-flipping</strong> and <strong>Byzantine attacks</strong>, and proposes <strong>fragmented federated learning</strong> to simultaneously strengthen privacy and security guarantees in distributed settings.</p>
+        <p class="research-papers">Key papers: <a href="#publications">LFighter</a>, <a href="#publications">Enhanced Security via Fragmented FL</a>, <a href="#publications">FL-Defender</a>, <a href="#publications">Byzantine Detection</a></p>
+      </div>
+
+      <div class="research-card reveal reveal-delay-1">
+        <div class="research-card-icon"><i class="fas fa-bug"></i></div>
+        <h3>Backdoor Attack Defence</h3>
+        <p>Backdoor attacks embed hidden triggers in models that activate on specific inputs while remaining undetectable during normal evaluation. I introduced a <strong>layer-wise feature analysis</strong> framework that exposes these trojaned representations, earning the <strong>Best Paper Award at PAKDD 2023</strong> and an invitation to present at IJCAI 2024 (CORE A★).</p>
+        <p class="research-papers">Key papers: <a href="#publications">DBALFA (PAKDD 2023)</a>, <a href="#publications">DBALFA Extended Abstract (IJCAI 2024)</a>, <a href="#publications">KeyNet</a></p>
+      </div>
+
+      <div class="research-card reveal reveal-delay-2">
+        <div class="research-card-icon"><i class="fas fa-brain"></i></div>
+        <h3>LLM Privacy &amp; Unlearning</h3>
+        <p>As large language models memorise vast amounts of training data, risks to privacy, copyright, and fairness intensify. My research advances <strong>machine unlearning</strong> — selectively erasing knowledge from trained models without full retraining — and rigorously analyses <strong>membership inference attacks</strong> to quantify and mitigate privacy exposure in modern LLMs.</p>
+        <p class="research-papers">Key papers: <a href="#publications">Digital Forgetting Survey</a>, <a href="#publications">DP2Unlearning</a>, <a href="#publications">Membership Inference Beyond Overfitting</a>, <a href="#publications">Defenses against MIA</a></p>
+      </div>
+
     </div>
   </div>
 </section>
@@ -702,6 +738,7 @@
       <li><a href="#home">Home</a></li>
       <li><a href="#news">News</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
       <li><a href="#publications">Publications</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#cv">CV</a></li>
