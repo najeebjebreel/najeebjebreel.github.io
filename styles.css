@@ -115,6 +115,7 @@ header.scrolled { box-shadow:var(--shadow-md); }
   transition:color .2s,border-color .2s,background .2s;
 }
 .icon-btn:hover { color:var(--navy); border-color:var(--navy); background:var(--gray-100); }
+.lang-toggle { font-size:.78rem; font-weight:700; width:auto; padding:0 .6rem; text-decoration:none; letter-spacing:.02em; }
 .menu-btn { display:none; }
 
 /* ============================================================
@@ -530,4 +531,28 @@ footer {
   .pub-entry { grid-template-columns:1fr; gap:.4rem; }
   .pub-year-col { text-align:left; font-size:.85rem; }
   .news-item { flex-direction:column; gap:.35rem; }
+}
+
+/* ============================================================
+   RTL / Arabic overrides  (index-ar.html)
+   ============================================================ */
+[dir="rtl"] {
+  font-family: 'Cairo', 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Flip timeline border from left to right */
+[dir="rtl"] .timeline-item { border-left: none; border-right: 2px solid var(--border); padding-left: 0; padding-right: 1.5rem; }
+[dir="rtl"] .timeline-item::before { left: auto; right: -5px; }
+
+/* Publication year column alignment */
+[dir="rtl"] .pub-year-col { text-align: right; }
+
+/* News date column */
+[dir="rtl"] .news-date { text-align: right; }
+
+/* Mobile nav slide from right */
+@media (max-width:700px) {
+  [dir="rtl"] .nav-links { left: auto; right: -100%; }
+  [dir="rtl"] .nav-links.active { right: 0; left: auto; }
+  [dir="rtl"] .pub-year-col { text-align: right; }
 }
