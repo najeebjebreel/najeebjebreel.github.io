@@ -286,11 +286,17 @@ section { padding:5.5rem 0; }
 .badge-award    { background:#fef3c7; color:#92400e; }
 .badge-invited  { background:#ede9fe; color:#5b21b6; }
 .badge-q1       { background:#d1fae5; color:#065f46; }
+.badge-q2       { background:#e0f2fe; color:#0369a1; }
+.badge-conf     { background:#f3e8ff; color:#6b21a8; }
+.badge-preprint { background:#f1f5f9; color:#475569; }
 .badge-core     { background:#fee2e2; color:#991b1b; }
 [data-theme="dark"] .badge-journal  { background:#1e3a6e; color:#93c5fd; }
 [data-theme="dark"] .badge-award    { background:#3d2a00; color:#fcd34d; }
 [data-theme="dark"] .badge-invited  { background:#2e1c56; color:#c4b5fd; }
 [data-theme="dark"] .badge-q1       { background:#064232; color:#6ee7b7; }
+[data-theme="dark"] .badge-q2       { background:#082f49; color:#7dd3fc; }
+[data-theme="dark"] .badge-conf     { background:#2e1065; color:#d8b4fe; }
+[data-theme="dark"] .badge-preprint { background:#1e293b; color:#94a3b8; }
 [data-theme="dark"] .badge-core     { background:#450a0a; color:#fca5a5; }
 
 /* ============================================================
