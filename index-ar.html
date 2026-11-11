@@ -2,770 +2,438 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>د. نجيب جبريل — باحث في خصوصية وأمن تعلم الآلة</title>
-
-  <!-- SEO -->
-  <meta name="description" content="د. نجيب جبريل — باحث ما بعد الدكتوراه (منحة خوان دي لا سييرفا) في الجامعة المفتوحة لكتالونيا (UOC) متخصص في خصوصية وأمن تعلم الآلة، والتعلم الاتحادي، والدفاع ضد الهجمات الخلفية، ومحاذاة النماذج اللغوية.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>نجيب جبريل — خصوصية وأمن تعلّم الآلة</title>
+  <meta name="description" content="نجيب جبريل باحث ما بعد الدكتوراه (منحة خوان دي لا سييرفا) في الجامعة المفتوحة لكتالونيا (UOC)، يعمل على خصوصية وأمن تعلّم الآلة: استنتاج العضوية، وإلغاء التعلّم الآلي، والخصوصية التفاضلية، وأمن التعلّم الاتحادي.">
   <meta name="author" content="Najeeb Jebreel">
+  <meta name="color-scheme" content="light dark">
   <link rel="canonical" href="https://najeebjebreel.github.io/index-ar.html">
-
-  <!-- Open Graph -->
+  <link rel="alternate" hreflang="en" href="https://najeebjebreel.github.io/">
+  <link rel="alternate" hreflang="ca" href="https://najeebjebreel.github.io/index-ca.html">
+  <link rel="alternate" hreflang="ar" href="https://najeebjebreel.github.io/index-ar.html">
+  <link rel="alternate" hreflang="x-default" href="https://najeebjebreel.github.io/">
   <meta property="og:type" content="profile">
-  <meta property="og:title" content="د. نجيب جبريل — باحث في خصوصية وأمن تعلم الآلة">
-  <meta property="og:description" content="باحث خوان دي لا سييرفا في UOC · أمن التعلم الاتحادي · الدفاع ضد الهجمات الخلفية · خصوصية النماذج اللغوية">
+  <meta property="og:title" content="نجيب جبريل — خصوصية وأمن تعلّم الآلة">
+  <meta property="og:description" content="نجيب جبريل باحث ما بعد الدكتوراه (منحة خوان دي لا سييرفا) في الجامعة المفتوحة لكتالونيا (UOC)، يعمل على خصوصية وأمن تعلّم الآلة: استنتاج العضوية، وإلغاء التعلّم الآلي، والخصوصية التفاضلية، وأمن التعلّم الاتحادي.">
   <meta property="og:url" content="https://najeebjebreel.github.io/index-ar.html">
   <meta property="og:image" content="https://najeebjebreel.github.io/images/profile_photo.jpg">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Person","name":"Najeeb Moharram Salim Jebreel","honorificPrefix":"Dr.","jobTitle":"Juan de la Cierva Postdoctoral Fellow","affiliation":{"@type":"Organization","name":"Universitat Oberta de Catalunya","url":"https://www.uoc.edu/en"},"url":"https://najeebjebreel.github.io/","sameAs":["https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en","https://orcid.org/0000-0002-4911-3802","https://www.researchgate.net/profile/Najeeb-Jebreel","https://github.com/najeebjebreel","https://www.linkedin.com/in/najeebjebreel/"]}
+  <meta name="twitter:card" content="summary">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Najeeb Jebreel","alternateName":"Najeeb Moharram Salim Jebreel","honorificPrefix":"Dr.","jobTitle":"Juan de la Cierva Postdoctoral Fellow","affiliation":{"@type":"Organization","name":"Universitat Oberta de Catalunya","url":"https://www.uoc.edu/"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Universitat Rovira i Virgili"},"email":"mailto:njebreel@uoc.edu","url":"https://najeebjebreel.github.io/","image":"https://najeebjebreel.github.io/images/profile_photo.jpg","knowsAbout":["Membership inference attacks","Machine unlearning","Differential privacy","Federated learning security"],"sameAs":["https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en","https://orcid.org/0000-0002-4911-3802","https://github.com/najeebjebreel","https://www.linkedin.com/in/najeebjebreel/","https://www.researchgate.net/profile/Najeeb-Jebreel"]}</script>
+  <script>
+    (function () {
+      var t = null;
+      try { t = localStorage.getItem('theme'); } catch (e) {}
+      if (!t) t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = t;
+    })();
   </script>
-
-  <!-- Fonts: Plus Jakarta Sans + Cairo -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-
-  <!-- Icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Noto+Naskh+Arabic:wght@500;600&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip-link" href="#main">انتقل إلى المحتوى</a>
 
-<!-- ───────────────── HEADER ───────────────── -->
-<header id="main-header">
-  <div class="container header-container">
-    <div class="logo"><a href="#home">نجيب جبريل</a></div>
-    <nav aria-label="التنقل الرئيسي">
-      <ul class="nav-links" role="list">
-        <li><a href="#home">الرئيسية</a></li>
-        <li><a href="#news">الأخبار</a></li>
-        <li><a href="#about">نبذة عني</a></li>
-        <li><a href="#research">البحث</a></li>
-        <li><a href="#publications">المنشورات</a></li>
-        <li><a href="#projects">المشاريع</a></li>
-        <li><a href="#cv">السيرة الذاتية</a></li>
-        <li><a href="#contact">تواصل</a></li>
+<header class="site-header">
+  <div class="wrap">
+    <a class="wordmark" href="#top">نجيب جبريل</a>
+    <nav class="nav" id="nav" aria-label="الأقسام">
+      <ul>
+          <li><a href="#news">الأخبار</a></li>
+          <li><a href="#about">نبذة عني</a></li>
+          <li><a href="#research">البحث</a></li>
+          <li><a href="#publications">المنشورات</a></li>
+          <li><a href="#projects">المشاريع</a></li>
+          <li><a href="#cv">السيرة الذاتية</a></li>
+          <li><a href="#contact">التواصل</a></li>
       </ul>
-      <div class="header-controls">
-        <a href="index.html" class="icon-btn lang-toggle" aria-label="English version" title="English">EN</a>
-        <a href="index-ca.html" class="icon-btn lang-toggle" aria-label="Catalan version" title="Versió en català">CA</a>
-        <button class="icon-btn" id="darkModeToggle" aria-label="تبديل الوضع المظلم"><i class="fas fa-moon"></i></button>
-        <button class="icon-btn menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false"><i class="fas fa-bars"></i></button>
-      </div>
     </nav>
+    <div class="tools">
+      <div class="lang" role="group" aria-label="اللغة"><a href="index.html" hreflang="en" lang="en" title="English">EN</a><a href="index-ca.html" hreflang="ca" lang="ca" title="Català">CA</a><span aria-current="page" lang="ar" class="ar" title="العربية">عربي</span></div>
+      <button class="icon-btn theme-btn" id="themeBtn" type="button" aria-label="الوضع الداكن" aria-pressed="false">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menuBtn" type="button" aria-label="القائمة" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
   </div>
 </header>
 
-<!-- ───────────────── HERO ───────────────── -->
-<section id="home" class="hero">
-  <div class="container hero-grid">
+<main id="main">
+  <div class="hero" id="top">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>نجيب جبريل</h1>
+          <p class="role">باحث ما بعد الدكتوراه (منحة خوان دي لا سييرفا)، مجموعة أبحاث KISON، الجامعة المفتوحة لكتالونيا (UOC)</p>
+          <p class="statement">أدرس ما تكشفه نماذج تعلّم الآلة المدرَّبة عن البيانات التي دُرِّبت عليها، وكيف يمكن قياس هذا التسرّب والحدّ منه وإزالته.</p>
+          <p class="links"><a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a> <a href="https://orcid.org/0000-0002-4911-3802" rel="noopener">ORCID</a> <a href="https://github.com/najeebjebreel" rel="noopener">GitHub</a> <a href="https://www.linkedin.com/in/najeebjebreel/" rel="noopener">LinkedIn</a> <a href="https://www.researchgate.net/profile/Najeeb-Jebreel" rel="noopener">ResearchGate</a> <a href="mailto:njebreel@uoc.edu">njebreel@uoc.edu</a></p>
+        </div>
+        <img class="portrait" src="images/profile_photo.jpg" alt="" width="210" height="263">
+      </div>
+      <figure class="samples">
+        <div class="sample-field" id="sampleField" aria-hidden="true"></div>
+        <figcaption>كل مربع عيّنة تدريب. في النموذج المدرَّب جيداً تكشف معظم العينات القليل عن استخدامها في التدريب، بينما تكشف <span class="key" aria-hidden="true"></span>قلّة منها أكثر بكثير. يبحث عملي الأخير في هذه العينات تحديداً، وفي ما إذا كان ذلك تهديداً حقيقياً للخصوصية.</figcaption>
+      </figure>
+    </div>
+  </div>
 
-    <div class="hero-content reveal">
-      <p class="hero-eyebrow"><i class="fas fa-map-marker-alt"></i> باحث ما بعد الدكتوراه — منحة خوان دي لا سييرفا · الجامعة المفتوحة لكتالونيا (UOC)</p>
-      <h1>د. نجيب جبريل</h1>
-      <p class="hero-tagline">خصوصية وأمن <span class="accent">تعلم الآلة</span></p>
-
-      <div class="social-links" role="list">
-        <a href="https://github.com/najeebjebreel" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://www.linkedin.com/in/najeebjebreel/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://orcid.org/0000-0002-4911-3802" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-        <a href="https://www.researchgate.net/profile/Najeeb-Jebreel" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
-        <a href="mailto:njebreel@uoc.edu" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+  <section class="sec" id="news" aria-labelledby="h-news">
+    <div class="wrap">
+      <h2 id="h-news">الأخبار</h2>
+      <div class="sec-body">
+        <ul class="news">
+          <li><time datetime="2026-09">سبتمبر 2026</time><p>نُشرت ورقة <cite lang="en">A Critical Review on the Effectiveness and Privacy Threats of Membership Inference Attacks</cite> في وقائع مؤتمر ESORICS 2026 (روما، تصنيف CORE A).</p></li>
+          <li><time datetime="2026-08">أغسطس 2026</time><p>نُشرت الورقة المشتركة <cite lang="en">Comparative Heatmap Explanations for Deep Learning-Based Breast Density Classification</cite> في مؤتمر IEEE eSmarTA 2026.</p></li>
+          <li><time datetime="2026-07">يوليو 2026</time><p>نُشرت ورقة <cite lang="en">Revisiting the LiRA Membership Inference Attack Under Realistic Assumptions</cite> في PoPETs 2026، العدد 3، وحصلت على شارات الأدوات البحثية الثلاث: Available وFunctional وReproduced.</p></li>
+          <li><time datetime="2026-07">يوليو 2026</time><p>بداية منحة خوان دي لا سييرفا لما بعد الدكتوراه في الجامعة المفتوحة لكتالونيا (UOC).</p></li>
+          <li><time datetime="2026-05">مايو 2026</time><p>نُشرت ورقة <cite lang="en">Membership Inference Attacks Beyond Overfitting</cite>، المقدَّمة في ورشة DPM 2025، ضمن وقائع ورش عمل ESORICS 2025 (LNCS).</p></li>
+          <li><time datetime="2026">2026</time><p>الانضمام إلى اللجنة العلمية لـ PoPETs 2027.</p></li>
+        </ul>
+        <details class="more">
+          <summary>أخبار سابقة</summary>
+          <ul class="news">
+            <li><time datetime="2025-01">يناير 2025</time><p>نُشر الاستعراض <cite lang="en">Digital Forgetting in Large Language Models</cite> في مجلة Artificial Intelligence Review (Q1، العُشير الأول).</p></li>
+            <li><time datetime="2024">2024</time><p>تقديم ورقة أفضل بحث في PAKDD 2023 ضمن مسار Sister Conferences في IJCAI 2024 (CORE A*)، جيجو، كوريا الجنوبية.</p></li>
+            <li><time datetime="2024">2024</time><p>نُشرت ورقة <cite lang="en">Enhanced Security and Privacy via Fragmented Federated Learning</cite> في مجلة IEEE TNNLS (Q1، العُشير الأول).</p></li>
+            <li><time datetime="2023">2023</time><p>الحصول على URV Extraordinary Doctorate Award عن أطروحة الدكتوراه في هندسة الحاسوب ورياضيات الأمن.</p></li>
+            <li><time datetime="2023">2023</time><p>جائزة أفضل بحث في PAKDD 2023 (CORE A)، أوساكا، من بين 869 ورقة مقدَّمة.</p></li>
+          </ul>
+        </details>
       </div>
     </div>
+  </section>
 
-    <div class="hero-photo-wrap reveal reveal-delay-1">
-      <div class="hero-photo-ring">
-        <img src="images/profile_photo.jpg" alt="صورة د. نجيب جبريل" width="280" height="280" loading="eager">
+  <section class="sec" id="about" aria-labelledby="h-about">
+    <div class="wrap">
+      <h2 id="h-about">نبذة عني</h2>
+      <div class="sec-body prose">
+          <p>نجيب جبريل باحث ما بعد الدكتوراه ضمن منحة خوان دي لا سييرفا في مجموعة أبحاث KISON بـ<a rel="noopener" href="https://www.uoc.edu/en">الجامعة المفتوحة لكتالونيا (UOC)</a>. تتناول أبحاثه الخصوصية والأمن في تعلّم الآلة: هجمات استنتاج العضوية وتدقيق الخصوصية، وإلغاء التعلّم الآلي، والخصوصية التفاضلية، والهجمات والدفاعات في التعلّم الاتحادي.</p>
+          <p>قبل انضمامه إلى UOC في يوليو 2026، عمل باحثاً ما بعد الدكتوراه في <a rel="noopener" href="https://crises-deim.urv.cat/">مجموعة أبحاث CRISES</a> بجامعة روفيرا إي فيرجيلي (URV)، حيث نال درجة الدكتوراه عام 2023 بمرتبة الشرف وحصل على URV Extraordinary Doctorate Award. وهو منتسب إلى كرسي اليونسكو لخصوصية البيانات في URV.</p>
+          <p>نُشرت أعماله في PoPETs وESORICS وIEEE TNNLS وNeural Networks وKnowledge-Based Systems وArtificial Intelligence Review، وتجاوز عدد الاستشهادات بها 720 استشهاداً (مؤشر h يساوي 11 وفق Google Scholar). وقد فازت ورقته حول التحليل الطبقي للميزات لمواجهة هجمات الباب الخلفي بجائزة أفضل بحث في PAKDD 2023، ودُعيت للتقديم في IJCAI 2024.</p>
+          <p>وهو عضو في اللجنة العلمية لـ PoPETs 2027، وقد أشرف على ثلاث رسائل ماجستير ويشرف حالياً على طالبَي دكتوراه. تعاون مع شركة Huawei Technologies ومختبر Notre Dame–IBM Technology Ethics Lab، وأسهم في مشاريع ممولة من المفوضية الأوروبية وINCIBE والوكالة الإسبانية للبحث.</p>
       </div>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- ───────────────── NEWS ───────────────── -->
-<section id="news" class="news-section">
-  <div class="container">
-    <p class="section-label reveal">الأحدث</p>
-    <h2 class="section-title reveal">آخر الأخبار</h2>
-    <ul class="news-list">
-      <li class="news-item reveal">
-        <span class="news-date">2026</span>
-        <span class="badge badge-journal">مجلة</span>
-        <span class="news-text">قُبل للنشر بحث <em>«إعادة النظر في هجوم استنتاج العضوية LiRA في ظل افتراضات واقعية»</em> في <strong>Proceedings on Privacy Enhancing Technologies (PoPETs)</strong> 2026، العدد 3 (CORE A، وصول مفتوح).</span>
-      </li>
-      <li class="news-item reveal">
-        <span class="news-date">يناير 2025</span>
-        <span class="badge badge-journal">مجلة</span>
-        <span class="news-text">نُشر الاستعراض الشامل حول <em>«النسيان الرقمي في النماذج اللغوية الكبيرة»</em> في مجلة <strong>Artificial Intelligence Review</strong> (الربع الأول · الشريحة الأولى، Springer).</span>
-      </li>
-      <li class="news-item reveal">
-        <span class="news-date">2024</span>
-        <span class="badge badge-invited">محاضرة مدعوة</span>
-        <span class="news-text">تقديم ورقة البحث الحائزة على جائزة أفضل بحث في PAKDD في مؤتمر <strong>IJCAI 2024</strong> (CORE A★) — مسار المؤتمرات الشقيقة، جيجو، كوريا الجنوبية.</span>
-      </li>
-      <li class="news-item reveal">
-        <span class="news-date">2024</span>
-        <span class="badge badge-journal">مجلة</span>
-        <span class="news-text">نُشر بحث <em>«تعزيز الأمن والخصوصية عبر التعلم الاتحادي المجزّأ»</em> في <strong>IEEE TNNLS</strong> (الربع الأول · الشريحة الأولى).</span>
-      </li>
-      <li class="news-item reveal">
-        <span class="news-date">2023</span>
-        <span class="badge badge-award">جائزة</span>
-        <span class="news-text">حصل على <strong>URV Extraordinary Doctorate Award</strong> من جامعة URV عن أطروحته في هندسة الحاسوب ورياضيات الأمن.</span>
-      </li>
-      <li class="news-item reveal">
-        <span class="news-date">2023</span>
-        <span class="badge badge-award">أفضل بحث</span>
-        <span class="news-text">🏆 حصل على <strong>جائزة أفضل بحث</strong> في PAKDD 2023 (CORE A) — 869 بحثاً مقدماً، نسبة القبول 16.5%، أوساكا، اليابان.</span>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- ───────────────── ABOUT ───────────────── -->
-<section id="about" class="about">
-  <div class="container">
-    <p class="section-label reveal">من أنا</p>
-    <h2 class="section-title reveal">نبذة عني</h2>
-    <div class="about-grid">
-      <div class="about-text reveal">
-        <p>نجيب جبريل باحث ما بعد الدكتوراه ضمن منحة خوان دي لا سييرفا في <a href="https://www.uoc.edu/en" target="_blank" rel="noopener">الجامعة المفتوحة لكتالونيا (UOC)</a>، متخصص في خصوصية وأمن تعلم الآلة. يجمع خبرةً أكاديمية ومهنية متنوعة تمتد لأكثر من عقد في البحث العلمي والتدريس والقيادة التقنية.</p>
-        <p>بدأ <strong>منحة خوان دي لا سييرفا 2024</strong> للباحثين ما بعد الدكتوراه من الحكومة الإسبانية في جامعة UOC في يوليو 2026، بعد أن عمل باحثاً ما بعد الدكتوراه في <a href="https://crises-deim.urv.cat/" target="_blank" rel="noopener">مجموعة أبحاث CRISES</a> بجامعة روفيرا وفيرجيلي (URV).</p>
-        <p>يمتلك محفظةً بحثية تضم أكثر من 20 منشوراً علمياً، ومؤشر h يبلغ 10، وأكثر من 636 استشهاداً، وقد نُشرت أعماله في مجلات عالية التأثير مثل <em>IEEE Transactions on Neural Networks and Learning Systems</em> و<em>Neural Networks</em> و<em>Artificial Intelligence Review</em> و<em>Knowledge-Based Systems</em>.</p>
-        <p>جرى تكريم تميزه البحثي بجوائز مرموقة، منها <strong>جائزة أفضل بحث</strong> في PAKDD 2023 (CORE A) من بين 869 بحثاً مقدماً. كما قدّم أبحاثه في PAKDD (اليابان 2023) و IJCAI (CORE A★، كوريا الجنوبية 2024) و ESORICS (فرنسا 2025).</p>
-        <p>بالإضافة إلى البحث العلمي، يُسهم في مشاريع بارزة ممولة من المفوضية الأوروبية و INCIBE والوكالة الإسبانية للبحث. كما يُشرف مشتركاً على طلاب الماجستير والدكتوراه، ويتعاون مع مؤسسات مثل شركة هواوي ومختبر Notre Dame–IBM للأخلاقيات التقنية.</p>
-        <p>حصل على درجة <strong>الدكتوراه</strong> من جامعة URV عام 2023 بمرتبة الشرف، ونال URV Extraordinary Doctorate Award. وهو منتسب إلى <strong>كرسي اليونسكو لخصوصية البيانات</strong> بجامعة URV.</p>
-      </div>
-      <div class="reveal reveal-delay-1">
-        <p class="skills-heading">مجالات البحث</p>
-        <ul class="skill-list">
-          <li class="skill-item"><i class="fas fa-shield-alt"></i> خصوصية وأمن التعلم الاتحادي</li>
-          <li class="skill-item"><i class="fas fa-lock"></i> خصوصية وأمن تعلم الآلة</li>
-          <li class="skill-item"><i class="fas fa-bug"></i> الدفاع ضد هجمات الباب الخلفي</li>
-          <li class="skill-item"><i class="fas fa-brain"></i> خصوصية النماذج اللغوية وأخلاقياتها وإلغاء تعلمها</li>
-          <li class="skill-item"><i class="fas fa-fingerprint"></i> العلامة المائية لنماذج تعلم الآلة</li>
-          <li class="skill-item"><i class="fas fa-eye"></i> أمن التعلم العميق</li>
-          <li class="skill-item"><i class="fas fa-lightbulb"></i> الذكاء الاصطناعي القابل للتفسير</li>
+  <section class="sec" id="research" aria-labelledby="h-research">
+    <div class="wrap">
+      <h2 id="h-research">البحث</h2>
+      <div class="sec-body">
+        <ul class="themes">
+          <li>
+            <h3>تدقيق الخصوصية واستنتاج العضوية</h3>
+            <p>تُعدّ هجمات استنتاج العضوية الأداة المعيارية لقياس ما يسرّبه النموذج عن بيانات تدريبه. أعيد تقييم هذه الهجمات في ظروف واقعية: نماذج مدرَّبة بالممارسات المعتادة للحدّ من فرط التخصيص، وعتبات قرار تُعايَر دون الوصول إلى بيانات النموذج المستهدف، واحتمالات عضوية مسبقة منحازة، وقابلية تكرار النتائج عبر جولات التدريب. في هذه الظروف تصبح حتى أقوى الهجمات، مثل LiRA، أضعف بكثير وأقل موثوقية مما يُذكر عادةً. كما أدرس سبب بقاء مجموعة صغيرة من العينات عرضةً للهجوم في نماذج تعمّم جيداً.</p>
+            <p class="key-papers">أبرز الأوراق: <span dir="ltr"><a href="#p-lira">LiRA (PoPETs 2026)</a>, <a href="#p-critical-review">Critical review (ESORICS 2026)</a>, <a href="#p-beyond-overfitting">Beyond overfitting (DPM 2025)</a></span></p>
+          </li>
+          <li>
+            <h3>إلغاء التعلّم الآلي</h3>
+            <p>تمنح قوانين حماية البيانات الأفراد الحق في محو بياناتهم، بما في ذلك من النماذج المدرَّبة عليها. أطوّر أساليب لإلغاء التعلّم ذات ضمانات رسمية: تُدرَّب النماذج أولاً على بيانات محمية بالخصوصية التفاضلية أو بإخفاء الهوية من نوع k (k-anonymity)، بحيث تُلبّى طلبات المحو لاحقاً بتكلفة منخفضة وبضمانات مستمدة من نموذج الخصوصية المستخدم. كما أدرس إلغاء التعلّم في النماذج اللغوية الكبيرة وطرق التحقق من حدوث المحو فعلاً.</p>
+            <p class="key-papers">أبرز الأوراق: <span dir="ltr"><a href="#p-digital-forgetting">Survey (AI Review 2025)</a>, <a href="#p-dp2unlearning">DP2Unlearning</a>, <a href="#p-eupg">EUPG</a>, <a href="#p-mia-unlearned">MIA defenses for unlearned data (MDAI 2025)</a></span></p>
+          </li>
+          <li>
+            <h3>أمن التعلّم الاتحادي والمركزي</h3>
+            <p>يتيح التعلّم الاتحادي تدريب النماذج دون تجميع البيانات الخام، لكنه يفتح أسطح هجوم جديدة. طوّرت دفاعات ضد هجمات قلب التسميات والهجمات البيزنطية وهجمات الباب الخلفي، واقترحت التعلّم الاتحادي المجزّأ لتعزيز الخصوصية والأمن معاً، وقدّمت تحليلاً طبقياً للميزات لكشف الأبواب الخلفية نال جائزة أفضل بحث في PAKDD 2023. وتتناول أعمال سابقة العلامات المائية لنماذج التعلّم العميق لإثبات ملكيتها.</p>
+            <p class="key-papers">أبرز الأوراق: <span dir="ltr"><a href="#p-lfighter">LFighter</a>, <a href="#p-fl-defender">FL-Defender</a>, <a href="#p-fragmented-fl">Fragmented FL (IEEE TNNLS)</a>, <a href="#p-dbalfa">Layer-wise feature analysis (PAKDD 2023)</a>, <a href="#p-keynet">KeyNet</a></span></p>
+          </li>
         </ul>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<hr class="section-divider">
-
-<!-- ───────────────── RESEARCH ───────────────── -->
-<section id="research" class="research">
-  <div class="container">
-    <p class="section-label reveal">مجالات عملي</p>
-    <h2 class="section-title reveal">البحث</h2>
-    <p class="research-intro reveal">يقع عملي عند تقاطع تعلم الآلة والخصوصية والأمن — بهدف بناء أنظمة ذكاء اصطناعي متينة وجديرة بالثقة ومتوافقة مع القيم الإنسانية. تسري ثلاثة محاور بحثية عبر مجمل أعمالي:</p>
-    <div class="research-grid">
-
-      <div class="research-card reveal">
-        <div class="research-card-icon"><i class="fas fa-network-wired"></i></div>
-        <h3>أمن التعلم الاتحادي</h3>
-        <p>يُتيح التعلم الاتحادي تدريباً تعاونياً للنماذج دون مشاركة البيانات الخام، غير أنه يُفتح أسطحاً جديدة للهجمات. تُطوّر أبحاثي دفاعات ضد <strong>هجمات قلب الملصقات</strong> و<strong>الهجمات البيزنطية</strong>، وتقترح <strong>التعلم الاتحادي المجزّأ</strong> لتعزيز ضمانات الخصوصية والأمن في البيئات الموزعة.</p>
-        <p class="research-papers">أبحاث رئيسية: <a href="#publications">LFighter</a>، <a href="#publications">التعلم الاتحادي المجزّأ</a>، <a href="#publications">FL-Defender</a>، <a href="#publications">كشف الهجمات البيزنطية</a></p>
-      </div>
-
-      <div class="research-card reveal reveal-delay-1">
-        <div class="research-card-icon"><i class="fas fa-bug"></i></div>
-        <h3>الدفاع ضد هجمات الباب الخلفي</h3>
-        <p>تُضمّن هجمات الباب الخلفي محفزات خفية في النماذج تُنشَّط عند مدخلات بعينها مع البقاء غير قابلة للاكتشاف أثناء التقييم الاعتيادي. طوّرت إطاراً للتحليل الطبقي للميزات يكشف هذه التمثيلات المخترقة، وقد فاز هذا البحث بـ<strong>جائزة أفضل بحث في PAKDD 2023</strong> ودُعي للتقديم في IJCAI 2024 (CORE A★).</p>
-        <p class="research-papers">أبحاث رئيسية: <a href="#publications">DBALFA (PAKDD 2023)</a>، <a href="#publications">الملخص التوسعي (IJCAI 2024)</a>، <a href="#publications">KeyNet</a></p>
-      </div>
-
-      <div class="research-card reveal reveal-delay-2">
-        <div class="research-card-icon"><i class="fas fa-brain"></i></div>
-        <h3>خصوصية النماذج اللغوية وإلغاء التعلم</h3>
-        <p>مع تراكم النماذج اللغوية الكبيرة لكميات هائلة من بيانات التدريب، تشتد المخاطر المتعلقة بالخصوصية وحقوق النشر والعدالة. تُقدّم أبحاثي إلغاء التعلم الآلي — محو معرفة انتقائي من النماذج المدرَّبة دون إعادة التدريب الكاملة — وتُحلل هجمات استنتاج العضوية لقياس التعرض للخصوصية في النماذج اللغوية الحديثة والحدّ منه.</p>
-        <p class="research-papers">أبحاث رئيسية: <a href="#publications">استعراض النسيان الرقمي</a>، <a href="#publications">DP2Unlearning</a>، <a href="#publications">هجمات استنتاج العضوية</a>، <a href="#publications">دفاعات ضد استنتاج العضوية</a></p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- ───────────────── PUBLICATIONS ───────────────── -->
-<section id="publications" class="publications">
-  <div class="container">
-    <p class="section-label reveal">الإنتاج البحثي</p>
-    <h2 class="section-title reveal">المنشورات</h2>
-    <div class="pub-list">
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">مقبول</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-journal">مجلة</span><span class="badge badge-core">CORE A</span></div>
-          <h3 class="pub-title">"Revisiting the LiRA Membership Inference Attack Under Realistic Assumptions"</h3>
-          <p class="pub-venue"><em>Proceedings on Privacy Enhancing Technologies (PoPETs)</em>, 2026, Issue 3 &nbsp;·&nbsp; Open Access</p>
-          <p class="pub-authors"><strong>Najeeb Jebreel</strong>, Mona Khalil, David Sánchez, Josep Domingo-Ferrer</p>
+  <section class="sec" id="publications" aria-labelledby="h-pubs">
+    <div class="wrap">
+      <h2 id="h-pubs">المنشورات</h2>
+      <div class="sec-body">
+        <div class="filters" id="pubFilters" role="group" aria-label="عرض" hidden>
+          <span class="label">عرض</span><button type="button" data-topic="all" aria-pressed="true">الكل</button><button type="button" data-topic="mia" aria-pressed="false">استنتاج العضوية</button><button type="button" data-topic="unl" aria-pressed="false">إلغاء التعلّم</button><button type="button" data-topic="sec" aria-pressed="false">أمن التعلّم الاتحادي والنماذج</button><button type="button" data-topic="oth" aria-pressed="false">أخرى</button>
+          <span class="count" id="pubCount" aria-live="polite" data-template="عدد المنشورات: {n}">عدد المنشورات: 24</span>
         </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2025</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-q1">Q1 · الشريحة الثانية</span></div>
-          <h3 class="pub-title">"DP2Unlearning: An Efficient and Guaranteed Unlearning Framework for LLMs"</h3>
-          <p class="pub-venue"><em>Neural Networks</em>, vol. 192, p. 107879, Elsevier, 2025</p>
-          <p class="pub-authors">Tamim Al Mahmud, <strong>Najeeb Jebreel</strong>, Josep Domingo-Ferrer, David Sánchez</p>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1016/j.neunet.2025.107879" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 2 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2025</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-q1">Q1 · الشريحة الأولى</span></div>
-          <h3 class="pub-title">"Digital Forgetting in Large Language Models: A Survey of Unlearning Methods"</h3>
-          <p class="pub-venue"><em>Artificial Intelligence Review</em>, vol. 58, no. 3, p. 90, Springer, 2025</p>
-          <p class="pub-authors">Alberto Blanco-Justicia, <strong>Najeeb Jebreel</strong>, Benet Manzanares-Salor, David Sánchez, Josep Domingo-Ferrer, Guillem Collell, Kuan Eeik Tan</p>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1007/s10462-024-11078-6" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 75 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2025</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-journal">مجلة · IEEE</span></div>
-          <h3 class="pub-title">"Unlearning in Large Language Models: We Are Not There Yet"</h3>
-          <p class="pub-venue"><em>Computer</em>, vol. 58, no. 1, pp. 97–100, IEEE, 2025</p>
-          <p class="pub-authors">Alberto Blanco-Justicia, Josep Domingo-Ferrer, <strong>Najeeb Moharram Jebreel</strong>, Benet Manzanares-Salor, David Sánchez</p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 4 استشهادات</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2025</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · MDAI 2025</span></div>
-          <h3 class="pub-title">"Defenses Against Membership Inference Attacks on Unlearned Data"</h3>
-          <p class="pub-venue">International Conference on Modeling Decisions for Artificial Intelligence (<em>MDAI 2025</em>), pp. 145–159, Springer</p>
-          <p class="pub-authors">Josep Domingo-Ferrer, <strong>Najeeb Jebreel</strong>, David Sánchez</p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> استشهاد واحد</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2025</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-preprint">قبل النشر</span></div>
-          <h3 class="pub-title">"Efficient Unlearning with Privacy Guarantees"</h3>
-          <p class="pub-venue"><em>arXiv preprint</em> arXiv:2507.04771, 2025</p>
-          <p class="pub-authors">Josep Domingo-Ferrer, <strong>Najeeb Jebreel</strong>, David Sánchez</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2507.04771" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> arXiv</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> استشهاد واحد</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2025</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-preprint">قبل النشر</span></div>
-          <h3 class="pub-title">"Membership Inference Attacks Beyond Overfitting"</h3>
-          <p class="pub-venue"><em>arXiv preprint</em> arXiv:2511.16792, 2025</p>
-          <p class="pub-authors">Mona Khalil, Alberto Blanco-Justicia, <strong>Najeeb Jebreel</strong>, Josep Domingo-Ferrer</p>
-          <div class="pub-links">
-            <a href="https://arxiv.org/abs/2511.16792" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> arXiv</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2024</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-q1">Q1 · الشريحة الثانية</span></div>
-          <h3 class="pub-title">"LFighter: Defending against the Label-Flipping Attack in Federated Learning"</h3>
-          <p class="pub-venue"><em>Neural Networks</em>, vol. 170, pp. 111–126, Elsevier, 2024</p>
-          <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, David Sánchez, Alberto Blanco-Justicia</p>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1016/j.neunet.2023.11.019" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-            <a href="https://github.com/najeebjebreel/LFighter" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github"></i> الكود</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 142 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2024</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-q1">Q1 · الشريحة الأولى</span></div>
-          <h3 class="pub-title">"Enhanced Security and Privacy via Fragmented Federated Learning"</h3>
-          <p class="pub-venue"><em>IEEE Transactions on Neural Networks and Learning Systems</em>, vol. 35, no. 5, pp. 6703–6717, 2024</p>
-          <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, Alberto Blanco-Justicia, David Sánchez</p>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1109/TNNLS.2022.3212627" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 59 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2024</div>
-        <div>
-          <div class="pub-badges">
-            <span class="badge badge-invited">Extended Abstract · IJCAI 2024</span>
-            <span class="badge badge-core">CORE A★</span>
-          </div>
-          <h3 class="pub-title">"Defending Against Backdoor Attacks by Layer-wise Feature Analysis (Extended Abstract)"</h3>
-          <p class="pub-venue">Proceedings of the 33rd International Joint Conference on Artificial Intelligence (<em>IJCAI 2024</em>), pp. 8416–8420, Jeju, South Korea — Sisters Conference Track</p>
-          <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, Yiming Li</p>
-          <div class="pub-links">
-            <a href="https://www.ijcai.org/proceedings/2024/" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> وقائع المؤتمر</a>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2024</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · PSD 2024</span></div>
-          <h3 class="pub-title">"An Examination of the Alleged Privacy Threats of Confidence-Ranked Reconstruction of Census Microdata"</h3>
-          <p class="pub-venue">International Conference on Privacy in Statistical Databases (<em>PSD 2024</em>), pp. 213–224, Springer</p>
-          <p class="pub-authors">David Sánchez, <strong>Najeeb Jebreel</strong>, Krishnamurty Muralidhar, Josep Domingo-Ferrer, Alberto Blanco-Justicia</p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 4 استشهادات</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2023</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-q1">Q1</span></div>
-          <h3 class="pub-title">"FL-Defender: Combating Targeted Attacks in Federated Learning"</h3>
-          <p class="pub-venue"><em>Knowledge-Based Systems</em>, vol. 260, p. 110178, Elsevier, 2023</p>
-          <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer</p>
-          <div class="pub-links">
-            <a href="https://doi.org/10.1016/j.knosys.2022.110178" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 119 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2023</div>
-        <div>
-          <div class="pub-badges">
-            <span class="badge badge-award">🏆 Best Paper</span>
-            <span class="badge badge-core">CORE A</span>
-            <span class="badge badge-invited">Invited · IJCAI 2024</span>
-          </div>
-          <h3 class="pub-title">"Defending Against Backdoor Attacks by Layer-wise Feature Analysis"</h3>
-          <p class="pub-venue">27th Pacific-Asia Conference on Knowledge Discovery and Data Mining (<em>PAKDD 2023</em>), pp. 428–440, Osaka, Japan, Springer, 2023</p>
-          <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, Yiming Li</p>
-          <p class="pub-note">Best Paper Award · 869 submissions · 16.5% acceptance rate · Invited to IJCAI 2024 Sisters Conference Track</p>
-          <div class="pub-links">
-            <a href="https://link.springer.com/chapter/10.1007/978-3-031-33377-4_33" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> الورقة</a>
-            <a href="https://github.com/najeebjebreel/DBALFA" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github"></i> الكود</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 29 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2022</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-journal">مجلة · IJUFKBS</span></div>
-          <h3 class="pub-title">"Generating Deep Learning Model-Specific Explanations at the End User's Side"</h3>
-          <p class="pub-venue"><em>International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems</em>, vol. 30, Supp02, pp. 255–278, 2022</p>
-          <p class="pub-authors">Rami Haffar, <strong>Najeeb Jebreel</strong>, David Sánchez, Josep Domingo-Ferrer</p>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2022</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · PSD 2022</span></div>
-          <h3 class="pub-title">"Generation of Synthetic Trajectory Microdata from Language Models"</h3>
-          <p class="pub-venue">International Conference on Privacy in Statistical Databases (<em>PSD 2022</em>), pp. 172–187, Springer</p>
-          <p class="pub-authors">Alberto Blanco-Justicia, <strong>Najeeb Moharram Jebreel</strong>, Jesús A. Manjón, Josep Domingo-Ferrer</p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 13 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2022</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · MDAI 2022</span></div>
-          <h3 class="pub-title">"Measuring Fairness in Machine Learning Models via Counterfactual Examples"</h3>
-          <p class="pub-venue">International Conference on Modeling Decisions for Artificial Intelligence (<em>MDAI 2022</em>), pp. 119–131, Springer</p>
-          <p class="pub-authors">Rami Haffar, Ashneet Khandpur Singh, Josep Domingo-Ferrer, <strong>Najeeb Jebreel</strong></p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 4 استشهادات</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2021</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-q2">Q2</span></div>
-          <h3 class="pub-title">"KeyNet: An Asymmetric Key-Style Framework for Watermarking Deep Learning Models"</h3>
-          <p class="pub-venue"><em>Applied Sciences</em>, vol. 11, no. 3, p. 999, MDPI, 2021</p>
-          <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, David Sánchez, Alberto Blanco-Justicia</p>
-          <div class="pub-links">
-            <a href="https://doi.org/10.3390/app11030999" target="_blank" rel="noopener" class="pub-link"><i class="fas fa-external-link-alt"></i> DOI</a>
-            <a href="https://github.com/najeebjebreel/KeyNet" target="_blank" rel="noopener" class="pub-link"><i class="fab fa-github"></i> الكود</a>
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 30 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2021</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · MDAI 2021</span></div>
-          <h3 class="pub-title">"Explaining Image Misclassification in Deep Learning via Adversarial Examples"</h3>
-          <p class="pub-venue">International Conference on Modeling Decisions for Artificial Intelligence (<em>MDAI 2021</em>), pp. 323–334, Springer</p>
-          <p class="pub-authors">Rami Haffar, <strong>Najeeb Moharram Jebreel</strong>, Josep Domingo-Ferrer, David Sánchez</p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 17 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2020</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · CCGrid 2020 · IEEE/ACM</span></div>
-          <h3 class="pub-title">"Co-Utile Peer-to-Peer Decentralized Computing"</h3>
-          <p class="pub-venue">20th IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (<em>CCGrid 2020</em>), pp. 31–40, IEEE</p>
-          <p class="pub-authors">Josep Domingo-Ferrer, Alberto Blanco-Justicia, David Sánchez, <strong>Najeeb Jebreel</strong></p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 22 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2020</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · MDAI 2020</span></div>
-          <h3 class="pub-title">"Efficient Detection of Byzantine Attacks in Federated Learning Using Last Layer Biases"</h3>
-          <p class="pub-venue">International Conference on Modeling Decisions for Artificial Intelligence (<em>MDAI 2020</em>), pp. 154–165, Springer</p>
-          <p class="pub-authors"><strong>Najeeb Jebreel</strong>, Alberto Blanco-Justicia, David Sánchez, Josep Domingo-Ferrer</p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 17 استشهاداً</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="pub-entry reveal">
-        <div class="pub-year-col">2020</div>
-        <div>
-          <div class="pub-badges"><span class="badge badge-conf">مؤتمر · PSD 2020</span></div>
-          <h3 class="pub-title">"Detecting Bad Answers in Survey Data Through Unsupervised Machine Learning"</h3>
-          <p class="pub-venue">International Conference on Privacy in Statistical Databases (<em>PSD 2020</em>), pp. 309–320, Springer</p>
-          <p class="pub-authors"><strong>Najeeb Moharram Jebreel</strong>, Rami Haffar, Ashneet Khandpur Singh, David Sánchez, Josep Domingo-Ferrer, Alberto Blanco-Justicia</p>
-          <div class="pub-links">
-            <span class="pub-citations"><i class="fas fa-quote-right"></i> 8 استشهادات</span>
-          </div>
-        </div>
-      </article>
-
-    </div>
-    <div class="section-cta reveal">
-      <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener" class="btn-primary">
-        <i class="fas fa-graduation-cap"></i> عرض الملف الكامل على Google Scholar
-      </a>
-    </div>
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- ───────────────── PROJECTS ───────────────── -->
-<section id="projects" class="projects">
-  <div class="container">
-    <p class="section-label reveal">التمويل</p>
-    <h2 class="section-title reveal">المشاريع البحثية</h2>
-    <div class="resume-grid">
-      <div>
-        <p class="subsection-title reveal">نشطة</p>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-date">2024</div>
-            <div class="tl-title">Mitigating Ethical Risks in LLMs through Localized Unlearning</div>
-            <div class="tl-org">Notre Dame–IBM Technology Ethics Lab</div>
-            <div class="tl-desc">دراسة النسيان الانتقائي في النماذج اللغوية الكبيرة لحماية الخصوصية والحدّ من توليد المحتوى الضار.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2023 – 2025</div>
-            <div class="tl-title">Strategic Project HERMES</div>
-            <div class="tl-org">INCIBE · جامعة URV</div>
-            <div class="tl-desc">أبحاث متقدمة في الأمن السيبراني وتقنيات الحفاظ على الخصوصية.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2022 – 2025</div>
-            <div class="tl-title">CURLING: Co-Utile decentRaLized computING</div>
-            <div class="tl-org">وزارة العلوم والابتكار الإسبانية</div>
-            <div class="tl-desc">تصميم حلول حوسبة لامركزية أخلاقية بمعالجة أولية للخصوصية والأمن.</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p class="subsection-title reveal">مكتملة</p>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-date">2021 – 2024</div>
-            <div class="tl-title">CRISES: Security and Privacy (2021 SGR 00115)</div>
-            <div class="tl-org">AGAUR · حكومة كتالونيا</div>
-            <div class="tl-desc">باحث رئيسي في مجموعة أبحاث الأمن والخصوصية CRISES بجامعة URV.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2021 – 2024</div>
-            <div class="tl-title">MobiDataLab</div>
-            <div class="tl-org">المفوضية الأوروبية · هورايزون 2020</div>
-            <div class="tl-desc">تقنيات الحفاظ على الخصوصية في مشاركة بيانات التنقل.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2020 – 2023</div>
-            <div class="tl-title">SoBigData++</div>
-            <div class="tl-org">المفوضية الأوروبية · هورايزون 2020</div>
-            <div class="tl-desc">الخصوصية والأمن في البنية التحتية الأوروبية لتحليل البيانات الضخمة.</div>
-          </div>
-        </div>
+        <section class="year" aria-label="2026">
+          <h3>2026</h3>
+          <ol class="pubs">
+          <li id="p-lira" data-topics="mia">
+            <p class="pub-title" lang="en" dir="ltr">Revisiting the LiRA Membership Inference Attack Under Realistic Assumptions</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Jebreel</b>, Mona Khalil, David Sánchez, Josep Domingo-Ferrer</p>
+            <p class="pub-venue" dir="ltr"><em>Proceedings on Privacy Enhancing Technologies (PoPETs)</em>, 2026(3), pp. 765–786</p>
+            <p class="pub-note">شارات الأدوات البحثية: Available وFunctional وReproduced.</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">CORE A</span><span class="tag">وصول مفتوح</span></span><span class="links"><a href="https://doi.org/10.56553/popets-2026-0105" rel="noopener">DOI</a><a href="https://github.com/najeebjebreel/lira_analysis" rel="noopener">الكود</a><a href="https://arxiv.org/abs/2603.07567" rel="noopener">arXiv</a></span><span class="cites">4 استشهادات</span></p>
+          </li>
+          <li id="p-critical-review" data-topics="mia">
+            <p class="pub-title" lang="en" dir="ltr">A Critical Review on the Effectiveness and Privacy Threats of Membership Inference Attacks</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Jebreel</b>, David Sánchez, Josep Domingo-Ferrer</p>
+            <p class="pub-venue" dir="ltr"><em>Computer Security – ESORICS 2026</em>, Rome, LNCS 16969, pp. 45–64, Springer</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">CORE A</span></span><span class="links"><a href="https://doi.org/10.1007/978-3-032-38695-3_3" rel="noopener">DOI</a><a href="https://arxiv.org/abs/2603.22987" rel="noopener">arXiv</a></span><span class="cites">استشهادان</span></p>
+          </li>
+          <li id="p-heatmaps" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">Comparative Heatmap Explanations for Deep Learning-Based Breast Density Classification</p>
+            <p class="pub-authors" dir="ltr">Salah Jabreel, Hatem A. Rashwan, <b>Najeeb Jebreel</b>, Mohammed Jabreel</p>
+            <p class="pub-venue" dir="ltr">6th International Conference on Emerging Smart Technologies and Applications (<em>eSmarTA 2026</em>), IEEE</p>
+          </li>
+          <li id="p-beyond-overfitting" data-topics="mia">
+            <p class="pub-title" lang="en" dir="ltr">Membership Inference Attacks Beyond Overfitting</p>
+            <p class="pub-authors" dir="ltr">Mona Khalil, Alberto Blanco-Justicia, <b>Najeeb Jebreel</b>, Josep Domingo-Ferrer</p>
+            <p class="pub-venue" dir="ltr"><em>Computer Security. ESORICS 2025 International Workshops</em> (DPM 2025), Toulouse, LNCS 16231, pp. 32–48, Springer</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">ورشة عمل</span></span><span class="links"><a href="https://doi.org/10.1007/978-3-032-16089-8_3" rel="noopener">DOI</a><a href="https://github.com/najeebjebreel/mia_analysis" rel="noopener">الكود</a><a href="https://arxiv.org/abs/2511.16792" rel="noopener">arXiv</a></span><span class="cites">استشهادان</span></p>
+          </li>
+          </ol>
+        </section>
+        <section class="year" aria-label="2025">
+          <h3>2025</h3>
+          <ol class="pubs">
+          <li id="p-dp2unlearning" data-topics="unl">
+            <p class="pub-title" lang="en" dir="ltr">DP2Unlearning: An Efficient and Guaranteed Unlearning Framework for LLMs</p>
+            <p class="pub-authors" dir="ltr">Tamim Al Mahmud, <b>Najeeb Jebreel</b>, Josep Domingo-Ferrer, David Sánchez</p>
+            <p class="pub-venue" dir="ltr"><em>Neural Networks</em>, vol. 192, art. 107879, Elsevier</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">Q1، العُشير الثاني</span></span><span class="links"><a href="https://doi.org/10.1016/j.neunet.2025.107879" rel="noopener">DOI</a><a href="https://github.com/tamimalmahmud/LLM-Unlearning/tree/main/DP2Unlearning" rel="noopener">الكود</a></span><span class="cites">12 استشهاداً</span></p>
+          </li>
+          <li id="p-digital-forgetting" data-topics="unl">
+            <p class="pub-title" lang="en" dir="ltr">Digital Forgetting in Large Language Models: A Survey of Unlearning Methods</p>
+            <p class="pub-authors" dir="ltr">Alberto Blanco-Justicia, <b>Najeeb Jebreel</b>, Benet Manzanares-Salor, David Sánchez, Josep Domingo-Ferrer, Guillem Collell, Kuan Eeik Tan</p>
+            <p class="pub-venue" dir="ltr"><em>Artificial Intelligence Review</em>, vol. 58, no. 3, art. 90, Springer</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">Q1، العُشير الأول</span></span><span class="links"><a href="https://doi.org/10.1007/s10462-024-11078-6" rel="noopener">DOI</a></span><span class="cites">104 استشهاداً</span></p>
+          </li>
+          <li id="p-not-there-yet" data-topics="unl">
+            <p class="pub-title" lang="en" dir="ltr">Unlearning in Large Language Models: We Are Not There Yet</p>
+            <p class="pub-authors" dir="ltr">Alberto Blanco-Justicia, Josep Domingo-Ferrer, <b>Najeeb Moharram Jebreel</b>, Benet Manzanares-Salor, David Sánchez</p>
+            <p class="pub-venue" dir="ltr"><em>Computer</em>, vol. 58, no. 1, pp. 97–100, IEEE</p>
+            <p class="pub-meta"><span class="cites">7 استشهادات</span></p>
+          </li>
+          <li id="p-mia-unlearned" data-topics="unl mia">
+            <p class="pub-title" lang="en" dir="ltr">Defenses Against Membership Inference Attacks on Unlearned Data</p>
+            <p class="pub-authors" dir="ltr">Josep Domingo-Ferrer, <b>Najeeb Jebreel</b>, David Sánchez</p>
+            <p class="pub-venue" dir="ltr">Modeling Decisions for Artificial Intelligence (<em>MDAI 2025</em>), València, LNCS 15957, pp. 145–159, Springer</p>
+            <p class="pub-meta"><span class="cites">4 استشهادات</span></p>
+          </li>
+          <li id="p-eupg" data-topics="unl">
+            <p class="pub-title" lang="en" dir="ltr">Efficient Unlearning with Privacy Guarantees</p>
+            <p class="pub-authors" dir="ltr">Josep Domingo-Ferrer, <b>Najeeb Jebreel</b>, David Sánchez</p>
+            <p class="pub-venue" dir="ltr"><em>arXiv preprint</em> arXiv:2507.04771</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">مسودة أولية</span></span><span class="links"><a href="https://arxiv.org/abs/2507.04771" rel="noopener">arXiv</a><a href="https://github.com/najeebjebreel/EUPG" rel="noopener">الكود</a></span><span class="cites">استشهادان</span></p>
+          </li>
+          </ol>
+        </section>
+        <section class="year" aria-label="2024">
+          <h3>2024</h3>
+          <ol class="pubs">
+          <li id="p-lfighter" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">LFighter: Defending against the Label-Flipping Attack in Federated Learning</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Jebreel</b>, Josep Domingo-Ferrer, David Sánchez, Alberto Blanco-Justicia</p>
+            <p class="pub-venue" dir="ltr"><em>Neural Networks</em>, vol. 170, pp. 111–126, Elsevier</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">Q1، العُشير الثاني</span></span><span class="links"><a href="https://doi.org/10.1016/j.neunet.2023.11.019" rel="noopener">DOI</a><a href="https://github.com/najeebjebreel/LFighter" rel="noopener">الكود</a></span><span class="cites">185 استشهاداً</span></p>
+          </li>
+          <li id="p-fragmented-fl" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">Enhanced Security and Privacy via Fragmented Federated Learning</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Jebreel</b>, Josep Domingo-Ferrer, Alberto Blanco-Justicia, David Sánchez</p>
+            <p class="pub-venue" dir="ltr"><em>IEEE Transactions on Neural Networks and Learning Systems</em>, vol. 35, no. 5, pp. 6703–6717</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">Q1، العُشير الأول</span></span><span class="links"><a href="https://doi.org/10.1109/TNNLS.2022.3212627" rel="noopener">DOI</a></span><span class="cites">69 استشهاداً</span></p>
+          </li>
+          <li id="p-dbalfa-ijcai" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">Defending Against Backdoor Attacks by Layer-wise Feature Analysis (Extended Abstract)</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Jebreel</b>, Josep Domingo-Ferrer, Yiming Li</p>
+            <p class="pub-venue" dir="ltr">Proceedings of the 33rd International Joint Conference on Artificial Intelligence (<em>IJCAI 2024</em>), Sister Conferences Best Papers track, pp. 8416–8420, Jeju</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">ملخص موسّع</span><span class="tag">CORE A*</span></span><span class="links"><a href="https://www.ijcai.org/proceedings/2024/" rel="noopener">الوقائع</a></span></p>
+          </li>
+          <li id="p-census" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">An Examination of the Alleged Privacy Threats of Confidence-Ranked Reconstruction of Census Microdata</p>
+            <p class="pub-authors" dir="ltr">David Sánchez, <b>Najeeb Jebreel</b>, Krishnamurty Muralidhar, Josep Domingo-Ferrer, Alberto Blanco-Justicia</p>
+            <p class="pub-venue" dir="ltr">Privacy in Statistical Databases (<em>PSD 2024</em>), pp. 213–224, Springer</p>
+            <p class="pub-meta"><span class="cites">4 استشهادات</span></p>
+          </li>
+          </ol>
+        </section>
+        <section class="year" aria-label="2023">
+          <h3>2023</h3>
+          <ol class="pubs">
+          <li id="p-fl-defender" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">FL-Defender: Combating Targeted Attacks in Federated Learning</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Jebreel</b>, Josep Domingo-Ferrer</p>
+            <p class="pub-venue" dir="ltr"><em>Knowledge-Based Systems</em>, vol. 260, art. 110178, Elsevier</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">Q1</span></span><span class="links"><a href="https://doi.org/10.1016/j.knosys.2022.110178" rel="noopener">DOI</a></span><span class="cites">152 استشهاداً</span></p>
+          </li>
+          <li id="p-dbalfa" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">Defending Against Backdoor Attacks by Layer-wise Feature Analysis</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Jebreel</b>, Josep Domingo-Ferrer, Yiming Li</p>
+            <p class="pub-venue" dir="ltr">27th Pacific-Asia Conference on Knowledge Discovery and Data Mining (<em>PAKDD 2023</em>), Osaka, pp. 428–440, Springer</p>
+            <p class="pub-note">869 ورقة مقدَّمة ونسبة قبول 16.5%. دُعيت للتقديم في مسار Sister Conferences في IJCAI 2024.</p>
+            <p class="pub-meta"><span class="tags"><span class="tag award">جائزة أفضل بحث</span><span class="tag">CORE A</span></span><span class="links"><a href="https://link.springer.com/chapter/10.1007/978-3-031-33377-4_33" rel="noopener">الورقة</a><a href="https://github.com/najeebjebreel/DBALFA" rel="noopener">الكود</a></span><span class="cites">43 استشهاداً</span></p>
+          </li>
+          <li id="p-thesis" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">Protecting Models and Data in Federated and Centralized Learning</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Salim Jebreel</b></p>
+            <p class="pub-venue">أطروحة دكتوراه، Universitat Rovira i Virgili، بإشراف Josep Domingo-Ferrer</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">أطروحة دكتوراه</span></span><span class="cites">استشهاد واحد</span></p>
+          </li>
+          </ol>
+        </section>
+        <section class="year" aria-label="2022">
+          <h3>2022</h3>
+          <ol class="pubs">
+          <li id="p-explanations-end-user" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">Generating Deep Learning Model-Specific Explanations at the End User's Side</p>
+            <p class="pub-authors" dir="ltr">Rami Haffar, <b>Najeeb Jebreel</b>, David Sánchez, Josep Domingo-Ferrer</p>
+            <p class="pub-venue" dir="ltr"><em>International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems</em>, vol. 30, Supp02, pp. 255–278</p>
+            <p class="pub-meta"><span class="cites">استشهادان</span></p>
+          </li>
+          <li id="p-synthetic-trajectories" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">Generation of Synthetic Trajectory Microdata from Language Models</p>
+            <p class="pub-authors" dir="ltr">Alberto Blanco-Justicia, <b>Najeeb Moharram Jebreel</b>, Jesús A. Manjón, Josep Domingo-Ferrer</p>
+            <p class="pub-venue" dir="ltr">Privacy in Statistical Databases (<em>PSD 2022</em>), pp. 172–187, Springer</p>
+            <p class="pub-meta"><span class="cites">13 استشهاداً</span></p>
+          </li>
+          <li id="p-fairness" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">Measuring Fairness in Machine Learning Models via Counterfactual Examples</p>
+            <p class="pub-authors" dir="ltr">Rami Haffar, Ashneet Khandpur Singh, Josep Domingo-Ferrer, <b>Najeeb Jebreel</b></p>
+            <p class="pub-venue" dir="ltr">Modeling Decisions for Artificial Intelligence (<em>MDAI 2022</em>), pp. 119–131, Springer</p>
+            <p class="pub-meta"><span class="cites">6 استشهادات</span></p>
+          </li>
+          </ol>
+        </section>
+        <section class="year" aria-label="2021">
+          <h3>2021</h3>
+          <ol class="pubs">
+          <li id="p-keynet" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">KeyNet: An Asymmetric Key-Style Framework for Watermarking Deep Learning Models</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Jebreel</b>, Josep Domingo-Ferrer, David Sánchez, Alberto Blanco-Justicia</p>
+            <p class="pub-venue" dir="ltr"><em>Applied Sciences</em>, vol. 11, no. 3, art. 999, MDPI</p>
+            <p class="pub-meta"><span class="tags"><span class="tag">Q2</span><span class="tag">وصول مفتوح</span></span><span class="links"><a href="https://doi.org/10.3390/app11030999" rel="noopener">DOI</a><a href="https://github.com/najeebjebreel/KeyNet" rel="noopener">الكود</a></span><span class="cites">33 استشهاداً</span></p>
+          </li>
+          <li id="p-misclassification" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">Explaining Image Misclassification in Deep Learning via Adversarial Examples</p>
+            <p class="pub-authors" dir="ltr">Rami Haffar, <b>Najeeb Moharram Jebreel</b>, Josep Domingo-Ferrer, David Sánchez</p>
+            <p class="pub-venue" dir="ltr">Modeling Decisions for Artificial Intelligence (<em>MDAI 2021</em>), pp. 323–334, Springer</p>
+            <p class="pub-meta"><span class="cites">21 استشهاداً</span></p>
+          </li>
+          </ol>
+        </section>
+        <section class="year" aria-label="2020">
+          <h3>2020</h3>
+          <ol class="pubs">
+          <li id="p-co-utile" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">Co-Utile Peer-to-Peer Decentralized Computing</p>
+            <p class="pub-authors" dir="ltr">Josep Domingo-Ferrer, Alberto Blanco-Justicia, David Sánchez, <b>Najeeb Jebreel</b></p>
+            <p class="pub-venue" dir="ltr">20th IEEE/ACM International Symposium on Cluster, Cloud and Internet Computing (<em>CCGrid 2020</em>), pp. 31–40, IEEE</p>
+            <p class="pub-meta"><span class="cites">22 استشهاداً</span></p>
+          </li>
+          <li id="p-byzantine" data-topics="sec">
+            <p class="pub-title" lang="en" dir="ltr">Efficient Detection of Byzantine Attacks in Federated Learning Using Last Layer Biases</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Jebreel</b>, Alberto Blanco-Justicia, David Sánchez, Josep Domingo-Ferrer</p>
+            <p class="pub-venue" dir="ltr">Modeling Decisions for Artificial Intelligence (<em>MDAI 2020</em>), pp. 154–165, Springer</p>
+            <p class="pub-meta"><span class="cites">22 استشهاداً</span></p>
+          </li>
+          <li id="p-bad-answers" data-topics="oth">
+            <p class="pub-title" lang="en" dir="ltr">Detecting Bad Answers in Survey Data Through Unsupervised Machine Learning</p>
+            <p class="pub-authors" dir="ltr"><b>Najeeb Moharram Jebreel</b>, Rami Haffar, Ashneet Khandpur Singh, David Sánchez, Josep Domingo-Ferrer, Alberto Blanco-Justicia</p>
+            <p class="pub-venue" dir="ltr">Privacy in Statistical Databases (<em>PSD 2020</em>), pp. 309–320, Springer</p>
+            <p class="pub-meta"><span class="cites">9 استشهادات</span></p>
+          </li>
+          </ol>
+        </section>
+        <p class="note">أعداد الاستشهادات من Google Scholar، نوفمبر 2026.</p>
+        <p class="all-pubs"><a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&amp;hl=en" rel="noopener">القائمة الكاملة مع الاستشهادات على Google Scholar</a></p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<hr class="section-divider">
-
-<!-- ───────────────── CV ───────────────── -->
-<section id="cv" class="cv">
-  <div class="container">
-    <p class="section-label reveal">الخلفية</p>
-    <h2 class="section-title reveal">السيرة الذاتية</h2>
-
-    <div class="resume-grid" style="margin-bottom:3.5rem">
-      <div>
-        <p class="subsection-title reveal">التعليم</p>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-date">2020 – 2023</div>
-            <div class="tl-title">دكتوراه في هندسة الحاسوب ورياضيات الأمن</div>
-            <div class="tl-org">Universitat Rovira i Virgili، إسبانيا</div>
-            <div class="tl-desc"><strong>بمرتبة الشرف · URV Extraordinary Doctorate Award من جامعة URV</strong></div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2019</div>
-            <div class="tl-title">ماجستير في هندسة أمن الحاسوب والذكاء الاصطناعي</div>
-            <div class="tl-org">Universitat Rovira i Virgili، إسبانيا</div>
-            <div class="tl-desc">المعدل: 8.1 / 10</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2009</div>
-            <div class="tl-title">بكالوريوس في علوم وهندسة الحاسوب</div>
-            <div class="tl-org">جامعة الحديدة، اليمن</div>
-            <div class="tl-desc">المعدل: 79.39 / 100</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p class="subsection-title reveal">الخبرة المهنية</p>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-date">2026 – الآن</div>
-            <div class="tl-title">باحث ما بعد الدكتوراه — منحة خوان دي لا سييرفا</div>
-            <div class="tl-org">Universitat Oberta de Catalunya (UOC)</div>
-            <div class="tl-desc">مُنحت في أكتوبر 2025 · بدأت في يوليو 2026 بجامعة UOC.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2024 – 2026</div>
-            <div class="tl-title">باحث ما بعد الدكتوراه</div>
-            <div class="tl-org">Universitat Rovira i Virgili (URV)</div>
-            <div class="tl-desc">قيادة أبحاث أمن تعلم الآلة والذكاء الاصطناعي الخاص ومحاذاة النماذج اللغوية.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2023</div>
-            <div class="tl-title">فني دعم بحثي</div>
-            <div class="tl-org">Universitat Rovira i Virgili (URV)</div>
-            <div class="tl-desc">الدعم التقني لمشاريع الأمن السيبراني والخصوصية.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2020 – 2023</div>
-            <div class="tl-title">باحث دكتوراه — منحة FI</div>
-            <div class="tl-org">Universitat Rovira i Virgili (URV)</div>
-            <div class="tl-desc">بحث دكتوراه في أمن وخصوصية تعلم الآلة (منحة FI_B00760).</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2012 – 2017</div>
-            <div class="tl-title">مدير نظم الحاسوب</div>
-            <div class="tl-org">جامعة الحديدة، اليمن</div>
-            <div class="tl-desc">إدارة أنظمة وبنية تحتية تقنية المعلومات بالجامعة.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="resume-grid">
-      <div>
-        <p class="subsection-title reveal">الجوائز والتكريمات</p>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-date">2024</div>
-            <div class="tl-title">Juan de la Cierva 2024 Postdoctoral Fellowship</div>
-            <div class="tl-org">الحكومة الإسبانية</div>
-            <div class="tl-desc">مُنحت في أكتوبر 2025.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2024</div>
-            <div class="tl-title">Invited — IJCAI 2024 Sisters Conference Track</div>
-            <div class="tl-org">International Joint Conference on Artificial Intelligence (CORE A★)</div>
-            <div class="tl-desc">دُعي للتقديم في IJCAI 2024 بناءً على ورقة أفضل بحث في PAKDD 2023.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2023</div>
-            <div class="tl-title">🏆 Best Paper Award — PAKDD 2023</div>
-            <div class="tl-org">27th Pacific-Asia Conference on KDD (CORE A)</div>
-            <div class="tl-desc">869 بحثاً مقدماً · نسبة القبول 16.5%.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2023</div>
-            <div class="tl-title">URV Extraordinary Doctorate Award</div>
-            <div class="tl-org">Universitat Rovira i Virgili</div>
-            <div class="tl-desc">تكريم لأطروحة دكتوراه استثنائية في هندسة الحاسوب ورياضيات الأمن.</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <p class="subsection-title reveal">الخدمة الأكاديمية</p>
-        <div class="timeline">
-          <div class="tl-item reveal">
-            <div class="tl-date">2026 – الآن</div>
-            <div class="tl-title">عضو اللجنة العلمية — <a href="https://submit.petsymposium.org/2027.1/users.php/pc" target="_blank" rel="noopener">PoPETs 2027</a></div>
-            <div class="tl-org">Privacy Enhancing Technologies Symposium (تصنيف CORE A)</div>
-            <div class="tl-desc">عضو اللجنة العلمية لوقائع تقنيات تعزيز الخصوصية (PoPETs 2027، العدد الأول).</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2020 – الآن</div>
-            <div class="tl-title">محكِّم في مجلات علمية</div>
-            <div class="tl-org">IEEE · ACM · Elsevier</div>
-            <div class="tl-desc">Knowledge-Based Systems وFuture Generation Computer Systems وIEEE Internet of Things Journal وIEEE TDSC وIEEE TNNLS وACM TIST وACM Computing Surveys. <a href="https://orcid.org/0000-0002-4911-3802" target="_blank" rel="noopener">مراجعات موثقة على ORCID</a>.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2020 – الآن</div>
-            <div class="tl-title">محكِّم في مؤتمرات علمية</div>
-            <div class="tl-org">ACM · IEEE · Springer</div>
-            <div class="tl-desc">ACM CCS وWPES 2020 (بالتزامن مع CCS 2020) وESORICS وIEEE ICDM وACISP.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2023 – الآن</div>
-            <div class="tl-title">الإشراف المشترك على الطلاب</div>
-            <div class="tl-org">Universitat Rovira i Virgili</div>
-            <div class="tl-desc">الإشراف المشترك على 3 طلاب ماجستير (أتم اثنان منهم بنجاح) وطالبَي دكتوراه.</div>
-          </div>
-          <div class="tl-item reveal">
-            <div class="tl-date">2020 – الآن</div>
-            <div class="tl-title">التعاونات البحثية الدولية</div>
-            <div class="tl-org">Huawei Technologies · Notre Dame–IBM Technology Ethics Lab</div>
-            <div class="tl-desc">أبحاث في الدفاع ضد الهجمات الخلفية وإلغاء تعلم النماذج اللغوية والذكاء الاصطناعي الخاص.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section-cta reveal">
-      <a href="https://crises-deim.urv.cat/web/members-2/najeeb-jebreel/" target="_blank" rel="noopener" class="btn-primary">
-        <i class="fas fa-user"></i> الملف الكامل في CRISES
-      </a>
-    </div>
-  </div>
-</section>
-
-<hr class="section-divider">
-
-<!-- ───────────────── CONTACT ───────────────── -->
-<section id="contact" class="contact">
-  <div class="container">
-    <p class="section-label reveal">تواصل معي</p>
-    <h2 class="section-title reveal">التواصل</h2>
-    <div class="contact-grid">
-
-      <div class="contact-card reveal">
-        <div class="contact-icon-wrap"><i class="fas fa-envelope"></i></div>
-        <h3>البريد الإلكتروني</h3>
-        <p><a href="mailto:njebreel@uoc.edu">njebreel@uoc.edu</a></p>
-      </div>
-
-      <div class="contact-card reveal">
-        <div class="contact-icon-wrap"><i class="fas fa-map-marker-alt"></i></div>
-        <h3>المكتب</h3>
-        <address>
-          مجموعة أبحاث CRISES<br>
-          قسم هندسة الحاسوب والرياضيات<br>
-          Universitat Rovira i Virgili<br>
-          Av. Països Catalans, 26<br>
-          43007 Tarragona, إسبانيا
-        </address>
-      </div>
-
-      <div class="contact-card reveal">
-        <div class="contact-icon-wrap"><i class="fas fa-user-graduate"></i></div>
-        <h3>الملفات الأكاديمية</h3>
-        <ul class="profile-links">
-          <li><a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a></li>
-          <li><a href="https://orcid.org/0000-0002-4911-3802" target="_blank" rel="noopener">ORCID 0000-0002-4911-3802</a></li>
-          <li><a href="https://www.researchgate.net/profile/Najeeb-Jebreel" target="_blank" rel="noopener">ResearchGate</a></li>
-          <li><a href="https://crises-deim.urv.cat/" target="_blank" rel="noopener">مجموعة أبحاث CRISES</a></li>
+  <section class="sec" id="projects" aria-labelledby="h-projects">
+    <div class="wrap">
+      <h2 id="h-projects">المشاريع</h2>
+      <div class="sec-body">
+        <h3 class="sub">حالية</h3>
+        <ul class="rows">
+          <li><span class="when">2026 –</span><div><p class="what">Juan de la Cierva Postdoctoral Fellowship (JDC2024-055591-I)</p><p class="where">MCIU/AEI وFSE+، الحكومة الإسبانية</p><div class="detail">أبحاث في استنتاج العضوية وإلغاء التعلّم الآلي والخصوصية التفاضلية في UOC.</div></div></li>
+        </ul>
+        <h3 class="sub">سابقة</h3>
+        <ul class="rows">
+          <li><span class="when">2024</span><div><p class="what">Mitigating Ethical Risks in LLMs through Localized Unlearning</p><p class="where">Notre Dame–IBM Technology Ethics Lab</p><div class="detail">النسيان الانتقائي في النماذج اللغوية الكبيرة لحماية الخصوصية والحدّ من توليد المحتوى الضار.</div></div></li>
+          <li><span class="when">2023 – 2025</span><div><p class="what">Strategic Project HERMES</p><p class="where">INCIBE وجامعة URV</p><div class="detail">تقنيات متقدمة في الأمن السيبراني والحفاظ على الخصوصية.</div></div></li>
+          <li><span class="when">2022 – 2025</span><div><p class="what">CURLING: Co-Utile decentRaLized computING</p><p class="where">وزارة العلوم والابتكار الإسبانية</p><div class="detail">الأخلاقيات بالتصميم في أنظمة الحوسبة الموزعة التي تضع الخصوصية أولاً.</div></div></li>
+          <li><span class="when">2021 – 2024</span><div><p class="what">CRISES: Security and Privacy (2021 SGR 00115)</p><p class="where">AGAUR، حكومة كتالونيا</p><div class="detail">باحث في مجموعة CRISES للأمن والخصوصية بجامعة URV.</div></div></li>
+          <li><span class="when">2021 – 2024</span><div><p class="what">MobiDataLab</p><p class="where">المفوضية الأوروبية، Horizon 2020</p><div class="detail">تقنيات الحفاظ على الخصوصية في مشاركة بيانات التنقل.</div></div></li>
+          <li><span class="when">2020 – 2023</span><div><p class="what">SoBigData++</p><p class="where">المفوضية الأوروبية، Horizon 2020</p><div class="detail">الخصوصية والأمن في البنية التحتية الأوروبية لتحليل البيانات الضخمة.</div></div></li>
         </ul>
       </div>
-
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ───────────────── FOOTER ───────────────── -->
-<footer>
-  <div class="container footer-inner">
-    <ul class="footer-links">
-      <li><a href="#home">الرئيسية</a></li>
-      <li><a href="#news">الأخبار</a></li>
-      <li><a href="#about">نبذة عني</a></li>
-      <li><a href="#research">البحث</a></li>
-      <li><a href="#publications">المنشورات</a></li>
-      <li><a href="#projects">المشاريع</a></li>
-      <li><a href="#cv">السيرة الذاتية</a></li>
-      <li><a href="#contact">تواصل</a></li>
-    </ul>
-    <div class="social-links footer-social">
-      <a href="https://github.com/najeebjebreel" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/najeebjebreel/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-      <a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-      <a href="https://orcid.org/0000-0002-4911-3802" target="_blank" rel="noopener" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
-      <a href="https://www.researchgate.net/profile/Najeeb-Jebreel" target="_blank" rel="noopener" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
-      <a href="mailto:njebreel@uoc.edu" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+  <section class="sec" id="cv" aria-labelledby="h-cv">
+    <div class="wrap">
+      <h2 id="h-cv">السيرة الذاتية</h2>
+      <div class="sec-body">
+        <h3 class="sub">الخبرة</h3>
+        <ul class="rows">
+          <li><span class="when">2026 – الآن</span><div><p class="what">باحث ما بعد الدكتوراه (منحة خوان دي لا سييرفا)</p><p class="where">الجامعة المفتوحة لكتالونيا (UOC)</p><div class="detail">استنتاج العضوية وإلغاء التعلّم الآلي والخصوصية التفاضلية.</div></div></li>
+          <li><span class="when">2024 – 2026</span><div><p class="what">باحث ما بعد الدكتوراه</p><p class="where">Universitat Rovira i Virgili (URV)</p><div class="detail">أمن تعلّم الآلة والذكاء الاصطناعي الحافظ للخصوصية وإلغاء التعلّم في النماذج اللغوية.</div></div></li>
+          <li><span class="when">2023</span><div><p class="what">فني دعم البحث</p><p class="where">Universitat Rovira i Virgili (URV)</p><div class="detail">دعم تقني لمشاريع الأمن السيبراني والخصوصية.</div></div></li>
+          <li><span class="when">2020 – 2023</span><div><p class="what">باحث ما قبل الدكتوراه (منحة FI)</p><p class="where">Universitat Rovira i Virgili (URV)</p><div class="detail">بحث الدكتوراه في أمن وخصوصية تعلّم الآلة (منحة FI_B00760).</div></div></li>
+          <li><span class="when">2012 – 2017</span><div><p class="what">مدير أنظمة الحاسوب</p><p class="where">جامعة الحديدة، اليمن</p><div class="detail">أنظمة الحاسوب والبنية التحتية في الجامعة.</div></div></li>
+        </ul>
+        <h3 class="sub">التعليم</h3>
+        <ul class="rows">
+          <li><span class="when">2020 – 2023</span><div><p class="what">دكتوراه في هندسة الحاسوب ورياضيات الأمن</p><p class="where">Universitat Rovira i Virgili، إسبانيا</p><div class="detail">بمرتبة الشرف، URV Extraordinary Doctorate Award</div></div></li>
+          <li><span class="when">2019</span><div><p class="what">ماجستير في هندسة أمن الحاسوب والذكاء الاصطناعي</p><p class="where">Universitat Rovira i Virgili، إسبانيا</p><div class="detail">المعدل 8.1 / 10</div></div></li>
+          <li><span class="when">2009</span><div><p class="what">بكالوريوس علوم وهندسة الحاسوب</p><p class="where">جامعة الحديدة، اليمن</p><div class="detail">المعدل 79.39 / 100</div></div></li>
+        </ul>
+        <h3 class="sub">الجوائز</h3>
+        <ul class="rows">
+          <li><span class="when">2025</span><div><p class="what">منحة خوان دي لا سييرفا 2024 لما بعد الدكتوراه</p><div class="detail">الحكومة الإسبانية. مُنحت في أكتوبر 2025 وبدأت في يوليو 2026 في UOC.</div></div></li>
+          <li><span class="when">2024</span><div><p class="what">محاضرة مدعوّة، مسار Sister Conferences في IJCAI 2024</p><div class="detail">بناءً على ورقة أفضل بحث في PAKDD 2023 (تصنيف IJCAI هو CORE A*).</div></div></li>
+          <li><span class="when">2023</span><div><p class="what">جائزة أفضل بحث، PAKDD 2023</p><div class="detail">27th Pacific-Asia Conference on Knowledge Discovery and Data Mining (CORE A)؛ 869 ورقة مقدَّمة ونسبة قبول 16.5%.</div></div></li>
+          <li><span class="when">2023</span><div><p class="what">URV Extraordinary Doctorate Award</p><div class="detail">دكتوراه في هندسة الحاسوب ورياضيات الأمن.</div></div></li>
+        </ul>
+        <h3 class="sub">الإشراف</h3>
+        <ul class="rows">
+          <li><span class="when">2023 –</span><div><p class="what">طلاب الدكتوراه</p><div class="detail">الإشراف على طالبَي دكتوراه (جارٍ).</div></div></li>
+          <li><span class="when"></span><div><p class="what">رسائل الماجستير</p><div class="detail">الإشراف على 3 رسائل ماجستير نوقشت جميعها.</div></div></li>
+        </ul>
+        <h3 class="sub">الخدمة الأكاديمية</h3>
+        <ul class="rows">
+          <li><span class="when">2026 – الآن</span><div><p class="what">عضو اللجنة العلمية، <a rel="noopener" href="https://submit.petsymposium.org/2027.1/users.php/pc">PoPETs 2027</a></p><div class="detail">Privacy Enhancing Technologies Symposium (CORE A).</div></div></li>
+          <li><span class="when">2020 – الآن</span><div><p class="what">محكِّم في مجلات علمية</p><div class="detail">Knowledge-Based Systems وFuture Generation Computer Systems وIEEE Internet of Things Journal وIEEE TDSC وIEEE TNNLS وIEEE TIFS وACM TIST وACM Computing Surveys.</div></div></li>
+          <li><span class="when">2020 – الآن</span><div><p class="what">محكِّم في مؤتمرات علمية</p><div class="detail">ACM CCS وWPES 2020 (بالتزامن مع CCS) وESORICS وIEEE ICDM وACISP.</div></div></li>
+          <li><span class="when">2020 – الآن</span><div><p class="what">مراجعات موثّقة: 16 (Web of Science)</p><div class="detail"><ul><li><span dir="ltr">ACM Computing Surveys</span>: مراجعتان</li><li><span dir="ltr">ACM Transactions on Intelligent Systems and Technology</span>: مراجعتان</li><li><span dir="ltr">Applied Sciences</span>: مراجعتان</li><li><span dir="ltr">Electronics</span>: مراجعتان</li><li><span dir="ltr">IEEE Internet of Things Journal</span>: مراجعة واحدة</li><li><span dir="ltr">Artificial Intelligence Review</span>: مراجعة واحدة</li><li><span dir="ltr">IEEE Transactions on Information Forensics and Security</span>: مراجعة واحدة</li><li><span dir="ltr">IEEE Transactions on Neural Networks and Learning Systems</span>: مراجعة واحدة</li></ul></div></div></li>
+          <li><span class="when">2020 – الآن</span><div><p class="what">تعاونات بحثية</p><div class="detail">Huawei Technologies ومختبر Notre Dame–IBM Technology Ethics Lab، في الدفاع ضد هجمات الباب الخلفي وإلغاء التعلّم في النماذج اللغوية وتعلّم الآلة الحافظ للخصوصية.</div></div></li>
+        </ul>
+      </div>
     </div>
-    <p class="footer-text">© 2026 د. نجيب جبريل &nbsp;·&nbsp; الجامعة المفتوحة لكتالونيا (UOC)</p>
+  </section>
+
+  <section class="sec" id="contact" aria-labelledby="h-contact">
+    <div class="wrap">
+      <h2 id="h-contact">التواصل</h2>
+      <div class="sec-body contact">
+        <div>
+          <h3>البريد الإلكتروني</h3>
+          <p><a href="mailto:njebreel@uoc.edu" class="email">njebreel@uoc.edu</a></p>
+        </div>
+        <div>
+          <h3>المكتب</h3>
+          <address>مجموعة أبحاث CRISES<br>قسم هندسة الحاسوب والرياضيات<br>Universitat Rovira i Virgili<br>Av. Països Catalans, 26<br>43007 Tarragona، إسبانيا</address>
+        </div>
+        <div>
+          <h3>الملفات الأكاديمية</h3>
+          <ul>
+            <li><a href="https://scholar.google.com/citations?user=aWbGsA4AAAAJ&amp;hl=en" rel="noopener">Google Scholar</a></li>
+            <li><a href="https://orcid.org/0000-0002-4911-3802" rel="noopener">ORCID</a></li>
+            <li><a href="https://github.com/najeebjebreel" rel="noopener">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/najeebjebreel/" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://www.researchgate.net/profile/Najeeb-Jebreel" rel="noopener">ResearchGate</a></li>
+            <li><a href="https://crises-deim.urv.cat/web/members-2/najeeb-jebreel/" rel="noopener">CRISES (URV)</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>© 2026 نجيب جبريل</span>
+    <span>آخر تحديث: نوفمبر 2026</span>
   </div>
 </footer>
 
