@@ -114,16 +114,21 @@
     };
     light();
 
+    // Redraw whenever the field's width changes (window resize, or a page that
+    // was laid out while hidden and only gets its real width later).
     let lastW = field.clientWidth;
     let t;
-    window.addEventListener('resize', () => {
+    const redraw = () => {
       clearTimeout(t);
       t = setTimeout(() => {
-        if (field.clientWidth === lastW) return;
-        lastW = field.clientWidth;
+        const w = field.clientWidth;
+        if (!w || w === lastW) return;
+        lastW = w;
         draw();
         field.classList.add('lit');
-      }, 150);
-    });
+      }, 120);
+    };
+    if ('ResizeObserver' in window) new ResizeObserver(redraw).observe(field);
+    else window.addEventListener('resize', redraw);
   }
 })();
